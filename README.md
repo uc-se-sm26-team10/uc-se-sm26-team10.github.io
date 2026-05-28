@@ -241,11 +241,11 @@ Include:
 
 ### Sprint 0
 
-**Duration:** YYYY-MM-DD to YYYY-MM-DD
+**Duration:** 2026-05-25 to 2026-06-14
 
 #### Sprint Goal
 
-TODO — one sentence.
+Establish the general objectives for the project and design the software architecture.
 
 #### Completed PBIs / Tasks
 
@@ -272,7 +272,7 @@ TODO — one sentence.
 
 ### Sprint 1
 
-**Duration:** YYYY-MM-DD to YYYY-MM-DD
+**Duration:** 2026-06-15 to 2026-06-28
 
 #### Sprint Goal
 
@@ -302,7 +302,7 @@ TODO — one sentence.
 ||||
 ### Sprint 2
 
-**Duration:** YYYY-MM-DD to YYYY-MM-DD
+**Duration:** 2026-06-29 to 2026-07-12
 
 #### Sprint Goal
 
@@ -332,7 +332,7 @@ TODO — one sentence.
 ||||
 ### Sprint 3
 
-**Duration:** YYYY-MM-DD to YYYY-MM-DD
+**Duration:** 2026-07-13 to 2026-07-26
 
 #### Sprint Goal
 
