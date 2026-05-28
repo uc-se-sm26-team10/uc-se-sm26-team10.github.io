@@ -20,11 +20,10 @@
 
 *Teams are 3–4 students (per syllabus). Solo teams are not permitted.*
 
-1. Member 1 Full Name — uc-email@mail.uc.edu — *Role (e.g., Scrum Master, ..)*
+1. Member 1 Joe Wilkie — wilkiejj@mail.uc.edu — Product Owner
 2. Member 2 Full Name — uc-email@mail.uc.edu — *Role (e.g., Product Owner, ..)*
 3. Member 3 Khoi Tran — tran2ki@mail.uc.edu
 4. Member 4 Skylar Bleau — bleausr@mail.uc.edu — Repository Owner
-5. Member 5 Full Name — uc-email@mail.uc.edu — *Role* *(if applicable)*
 
 \---
 
