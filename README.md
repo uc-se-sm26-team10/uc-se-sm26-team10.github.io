@@ -23,7 +23,7 @@
 1. Member 1 Full Name — uc-email@mail.uc.edu — *Role (e.g., Scrum Master, ..)*
 2. Member 2 Full Name — uc-email@mail.uc.edu — *Role (e.g., Product Owner, ..)*
 3. Member 3 Full Name — uc-email@mail.uc.edu — *Role* *(if applicable)*
-4. Member 4 Full Name — uc-email@mail.uc.edu — *Role* *(if applicable)*
+4. Member 4 Skylar Bleau — bleausr@mail.uc.edu — Repository Owner
 5. Member 5 Full Name — uc-email@mail.uc.edu — *Role* *(if applicable)*
 
 \---
@@ -42,7 +42,7 @@
 
 |Date|Version|Description|Author|
 |-|-|-|-|
-|MM/DD/YYYY|0.1|Initial draft (Sprint 0)|TODO|
+|05/28/2026|0.1|Initial Setup and Draft (Sprint 0)||
 |MM/DD/YYYY|0.2|Added use cases and architecture|TODO|
 
 \---
