@@ -22,7 +22,7 @@
 
 1. Member 1 Full Name — uc-email@mail.uc.edu — *Role (e.g., Scrum Master, ..)*
 2. Member 2 Full Name — uc-email@mail.uc.edu — *Role (e.g., Product Owner, ..)*
-3. Member 3 Full Name — uc-email@mail.uc.edu — *Role* *(if applicable)*
+3. Member 3 Khoi Tran — tran2ki@mail.uc.edu
 4. Member 4 Skylar Bleau — bleausr@mail.uc.edu — Repository Owner
 5. Member 5 Full Name — uc-email@mail.uc.edu — *Role* *(if applicable)*
 
@@ -32,10 +32,10 @@
 
 |Item|URL|
 |-|-|
-|Team homepage / landing page|https://uc-se-sm26-team-TODO.github.io|
+|Team homepage / landing page|https://uc-se-sm26-team10.github.io|
 |Live prototype (Azure App Services)|https://TODO.azurewebsites.net|
-|GitHub Projects board (private)|https://github.com/users/TODO/projects/TODO|
-|Source code repository (private)|https://github.com/TODO/TODO|
+|GitHub Projects board (private)|https://github.com/orgs/uc-se-sm26-team10/projects/1|
+|Source code repository (private)|https://github.com/uc-se-sm26-team10/uc-se-sm26-team10.github.io|
 |MongoDB Atlas cluster (configuration only — no credentials)|*e.g., cluster name, region*|
 
 ## Revision History
@@ -43,6 +43,7 @@
 |Date|Version|Description|Author|
 |-|-|-|-|
 |05/28/2026|0.1|Initial Setup and Draft (Sprint 0)||
+|05/28/2026|0.1|Added own personal info (Sprint 0)|Khoi Tran|
 |MM/DD/YYYY|0.2|Added use cases and architecture|TODO|
 
 \---
@@ -239,7 +240,7 @@ Include:
 
 > Copy the block below for each sprint (Sprint 0, 1, 2, 3).
 
-### Sprint X
+### Sprint 0
 
 **Duration:** YYYY-MM-DD to YYYY-MM-DD
 
@@ -270,7 +271,96 @@ TODO — one sentence.
 ||||
 ||||
 
+### Sprint 1
 
+**Duration:** YYYY-MM-DD to YYYY-MM-DD
+
+#### Sprint Goal
+
+TODO — one sentence.
+
+#### Completed PBIs / Tasks
+
+1. TODO
+2. TODO
+3. TODO
+
+#### Contributions
+
+|Member|Hours|Contribution Summary|
+|-|-|-|
+|Member 1|X|TODO|
+|Member 2|X|TODO|
+|Member 3|X|TODO|
+|Member 4|X|TODO|
+|Member 5|X|TODO|
+
+#### Sprint Retrospective
+
+|Good|Could have been better|How to improve|
+|-|-|-|
+||||
+||||
+### Sprint 2
+
+**Duration:** YYYY-MM-DD to YYYY-MM-DD
+
+#### Sprint Goal
+
+TODO — one sentence.
+
+#### Completed PBIs / Tasks
+
+1. TODO
+2. TODO
+3. TODO
+
+#### Contributions
+
+|Member|Hours|Contribution Summary|
+|-|-|-|
+|Member 1|X|TODO|
+|Member 2|X|TODO|
+|Member 3|X|TODO|
+|Member 4|X|TODO|
+|Member 5|X|TODO|
+
+#### Sprint Retrospective
+
+|Good|Could have been better|How to improve|
+|-|-|-|
+||||
+||||
+### Sprint 3
+
+**Duration:** YYYY-MM-DD to YYYY-MM-DD
+
+#### Sprint Goal
+
+TODO — one sentence.
+
+#### Completed PBIs / Tasks
+
+1. TODO
+2. TODO
+3. TODO
+
+#### Contributions
+
+|Member|Hours|Contribution Summary|
+|-|-|-|
+|Member 1|X|TODO|
+|Member 2|X|TODO|
+|Member 3|X|TODO|
+|Member 4|X|TODO|
+|Member 5|X|TODO|
+
+#### Sprint Retrospective
+
+|Good|Could have been better|How to improve|
+|-|-|-|
+||||
+||||
 
 Working through the sprints is a continuous-improvement process. The retrospective happens at the end of a sprint, before planning the next one. Cover three things briefly:
 
