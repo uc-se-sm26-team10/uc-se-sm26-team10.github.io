@@ -21,7 +21,6 @@
 *Teams are 3–4 students (per syllabus). Solo teams are not permitted.*
 
 1. Member 1 Joe Wilkie — wilkiejj@mail.uc.edu — Product Owner
-2. Member 2 Full Name — uc-email@mail.uc.edu — *Role (e.g., Product Owner, ..)*
 3. Member 3 Khoi Tran — tran2ki@mail.uc.edu
 4. Member 4 Skylar Bleau — bleausr@mail.uc.edu — Repository Owner
 5. Member 5 Noah Batcher — batchenh@mail.uc.edu
@@ -388,5 +387,5 @@ If your team chooses to publish the repository after the course, add an explicit
 
 \---
 
-*End of template. Last template revision: TODO: YYYY-MM-DD.*
+*End of template. Last template revision: 2026-05-29.*
 
