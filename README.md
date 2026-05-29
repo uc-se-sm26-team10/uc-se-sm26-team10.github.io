@@ -24,6 +24,7 @@
 2. Member 2 Full Name — uc-email@mail.uc.edu — *Role (e.g., Product Owner, ..)*
 3. Member 3 Khoi Tran — tran2ki@mail.uc.edu
 4. Member 4 Skylar Bleau — bleausr@mail.uc.edu — Repository Owner
+5. Member 5 Noah Batcher — batchenh@mail.uc.edu
 
 \---
 
