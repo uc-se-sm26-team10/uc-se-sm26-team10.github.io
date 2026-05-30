@@ -21,7 +21,7 @@
 *Teams are 3–4 students (per syllabus). Solo teams are not permitted.*
 
 1. Member 1 Joe Wilkie — wilkiejj@mail.uc.edu — Product Owner
-3. Member 3 Khoi Tran — tran2ki@mail.uc.edu
+3. Member 3 Khoi Tran — tran2ki@mail.uc.edu - Scrum Master
 4. Member 4 Skylar Bleau — bleausr@mail.uc.edu — Repository Owner
 5. Member 5 Noah Batcher — batchenh@mail.uc.edu
 
@@ -229,6 +229,10 @@ Per the course academic integrity policy, the team must document all AI-assisted
 *Start in Sprint 0; keep updating.*
 
 Describe how your team applies **Scrum**: roles, ceremonies (sprint planning, daily stand-ups, review, retrospective), and tools (GitHub Projects board, GitHub Issues, pull requests).
+
+Our team plans to meet weekly at the class's Lab, Thursday 6-9:00 PM for the project and related discussion, including Scrum. Outside of that timeframe, plannings, discussions, and more will be held via the groups' Discord server.
+Tools we will use for Scrum will be GitHub Projects, Issues, pull requests.
+Items can be self-created and assigned to designated members via discussion. Items stay in the drafting stage while in-progress. If the item warrants further discussion, it will be held while turning the draft into an issue. An issue is closed when the the item is finished up to standards.
 
 Include:
 
