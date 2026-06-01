@@ -71,6 +71,7 @@ List the high-level functional and non-functional requirements. These will be re
 
 ## User Stories \& Product Backlog
 
+* [Scrum Teamp Planning Backlog](https://github.com/orgs/uc-se-sm26-team10/projects/1)  
 Link to your **GitHub Projects board** (above) and include a representative screenshot of the **Todo / In Progress / Done** columns at the end of each sprint. *(Sprint 0 onward.)*
 
 ## Use Cases
