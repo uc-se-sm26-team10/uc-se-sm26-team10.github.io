@@ -261,11 +261,10 @@ Establish the general objectives for the project and design the software archite
 
 |Member|Hours|Contribution Summary|
 |-|-|-|
-|Member 1|X|TODO|
-|Member 2|X|TODO|
-|Member 3|X|TODO|
-|Member 4|X|TODO|
-|Member 5|X|TODO|
+|Joe Wilkie|X|TODO|
+|Khoi Tran|X|TODO|
+|Skylar Bleau|X|TODO|
+|Noah Batcher|X|TODO|
 
 #### Sprint Retrospective
 
