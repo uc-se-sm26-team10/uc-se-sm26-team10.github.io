@@ -21,7 +21,7 @@
 *Teams are 3–4 students (per syllabus). Solo teams are not permitted.*
 
 1. Joe Wilkie — wilkiejj@mail.uc.edu — Product Owner
-2. Khoi Tran — tran2ki@mail.uc.edu - Scrum Master
+2. Khoi Tran — tran2ki@mail.uc.edu — Scrum Master
 3. Skylar Bleau — bleausr@mail.uc.edu — Repository Owner
 4. Noah Batcher — batchenh@mail.uc.edu
 
