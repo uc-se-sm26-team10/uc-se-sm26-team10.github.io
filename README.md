@@ -20,10 +20,10 @@
 
 *Teams are 3–4 students (per syllabus). Solo teams are not permitted.*
 
-1. Member 1 Joe Wilkie — wilkiejj@mail.uc.edu — Product Owner
-3. Member 3 Khoi Tran — tran2ki@mail.uc.edu
-4. Member 4 Skylar Bleau — bleausr@mail.uc.edu — Repository Owner
-5. Member 5 Noah Batcher — batchenh@mail.uc.edu
+1. Joe Wilkie — wilkiejj@mail.uc.edu — Product Owner
+2. Khoi Tran — tran2ki@mail.uc.edu — Scrum Master
+3. Skylar Bleau — bleausr@mail.uc.edu — Repository Owner
+4. Noah Batcher — batchenh@mail.uc.edu
 
 \---
 
@@ -71,6 +71,7 @@ List the high-level functional and non-functional requirements. These will be re
 
 ## User Stories \& Product Backlog
 
+* [Scrum Teamp Planning Backlog](https://github.com/orgs/uc-se-sm26-team10/projects/1)  
 Link to your **GitHub Projects board** (above) and include a representative screenshot of the **Todo / In Progress / Done** columns at the end of each sprint. *(Sprint 0 onward.)*
 
 ## Use Cases
@@ -230,6 +231,10 @@ Per the course academic integrity policy, the team must document all AI-assisted
 
 Describe how your team applies **Scrum**: roles, ceremonies (sprint planning, daily stand-ups, review, retrospective), and tools (GitHub Projects board, GitHub Issues, pull requests).
 
+Our team plans to meet weekly at the class's Lab, Thursday 6-9:00 PM for the project and related discussion, including Scrum. Outside of that timeframe, plannings, discussions, and more will be held via the groups' Discord server.
+Tools we will use for Scrum will be GitHub Projects, Issues, pull requests.
+Items can be self-created and assigned to designated members via discussion. Items stay in the drafting stage while in-progress. If the item warrants further discussion, it will be held while turning the draft into an issue. An issue is closed when the the item is finished up to standards.
+
 Include:
 
 * A screenshot of the **GitHub Projects board** (Todo / In Progress / Done) at the end of each sprint.
@@ -257,11 +262,10 @@ Establish the general objectives for the project and design the software archite
 
 |Member|Hours|Contribution Summary|
 |-|-|-|
-|Member 1|X|TODO|
-|Member 2|X|TODO|
-|Member 3|X|TODO|
-|Member 4|X|TODO|
-|Member 5|X|TODO|
+|Joe Wilkie|X|TODO|
+|Khoi Tran|X|TODO|
+|Skylar Bleau|X|TODO|
+|Noah Batcher|X|TODO|
 
 #### Sprint Retrospective
 
