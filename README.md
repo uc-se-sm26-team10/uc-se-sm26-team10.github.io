@@ -78,10 +78,12 @@ Link to your **GitHub Projects board** (above) and include a representative scre
 
 Include the **use-case diagram** and a **brief description** (1–3 sentences) for each use case. *(Main focus of Sprint 0.)*
 
-|UC ID|Use Case|Primary Actor|Brief Description|
-|-|-|-|-|
-|UC-01|TODO|TODO|TODO|
-|UC-02|TODO|TODO|TODO|
+| UC ID | Use Case | Primary Actor | Brief Description |
+| :--- | :--- | :--- | :--- |
+| UC-01 | Send Message    | Connected User | Actor types a message and clicks Send; system receives the message and delivers it in real time to all connected users in global chat or private chat.  |
+| UC-02 | Receive Message | Connected User | System notifies user of incoming message and displays it in the conversation view without page refresh. They will also receive in real time without refreshing the number of active users and user status (typing, active, offline) |
+| UC-03 | Maintain List of Users/Friends | Users can follow/add users/friends and view them in a list. They can also make a  private group chats and see users/friends status. |
+
 
 \---
 
