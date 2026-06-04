@@ -63,16 +63,16 @@ Describe the project in 2–4 paragraphs: the problem it addresses, the target u
 
 List the high-level functional and non-functional requirements. These will be refined into user stories and use cases. *(Main focus of Sprint 0.)*
 
-* **FR-1:** TODO — *As a \[role], I want to \[capability] so that \[benefit].*
-* **FR-2:** TODO
-* **NFR-1 (Performance):** TODO
-* **NFR-2 (Usability):** TODO
+* **FR-1:** Send Messages — *As a user, I want to send messages to other users with instant sending so that communication is seemless.*
+* **FR-2:** Recieve Messages -  *As a user, I want to recieve messages from other users with instant recieving so that communication is seemless.*
+* **NFR-1 (Performance):** Low RAM/CPU/GPU usage - *As a user, I want a lightweight application so that my system isnt stressed*
+* **NFR-2 (Usability):** User Interface - *As a user, I want a clear login and chat interface so that navigation is easy*
 * **NFR-3 (Security — see §Security):** TODO
 
 ## User Stories \& Product Backlog
 
 * [Scrum Teamp Planning Backlog](https://github.com/orgs/uc-se-sm26-team10/projects/1)  
-Link to your **GitHub Projects board** (above) and include a representative screenshot of the **Todo / In Progress / Done** columns at the end of each sprint. *(Sprint 0 onward.)*
+TODO: add image of TODO/In Progress/Done columns at the end of Sprint 0 and onwards
 
 ## Use Cases
 
