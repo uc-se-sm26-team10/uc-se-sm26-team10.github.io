@@ -12,9 +12,9 @@
 
 \---
 
-# Scrum Project — TODO: Your Project Name
+# Scrum Project — Messenger
 
-> Replace \*\*"TODO: Your Project Name"\*\* with the title of your team's secure web application.
+Messenger is a real-time web-based chat application that allows registered users to communicate through public, private, and group messaging with additional features.
 
 ## Team Members
 
