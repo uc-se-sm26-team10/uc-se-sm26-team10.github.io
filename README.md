@@ -67,7 +67,7 @@ List the high-level functional and non-functional requirements. These will be re
 * **FR-2:** Recieve Messages -  *As a user, I want to recieve messages from other users with instant recieving so that communication is seemless.*
 * **NFR-1 (Performance):** Low RAM/CPU/GPU usage - *As a user, I want a lightweight application so that my system isnt stressed*
 * **NFR-2 (Usability):** User Interface - *As a user, I want a clear login and chat interface so that navigation is easy*
-* **NFR-3 (Security — see §Security):** TODO
+* **NFR-3 (Security — see §Security):** Scan Files - *As a user, I want to be protected from bad actors so that I can safely message*
 
 ## User Stories \& Product Backlog
 
@@ -129,8 +129,9 @@ This section documents how your team applies the **Secure Software Development L
 
 List security requirements alongside functional requirements. *(Sprint 0.)*
 
-* **SR-1:** TODO — *e.g., All authentication tokens must be transmitted over HTTPS only.*
+* **SR-1:** *Tentative* - Uploaded files must past a scan for known malware
 * **SR-2:** TODO — *e.g., Passwords must be hashed with bcrypt (cost ≥ 12); plaintext passwords must never be logged or stored.*
+* **SR-3:** TODO — *e.g., All authentication tokens must be transmitted over HTTPS only.*
 
 ## Threat Model
 
