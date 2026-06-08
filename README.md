@@ -80,9 +80,9 @@ Include the **use-case diagram** and a **brief description** (1–3 sentences) f
 
 | UC ID | Use Case | Primary Actor | Brief Description |
 | :--- | :--- | :--- | :--- |
-| UC-01 | Send Message    | Connected User | Actor types a message and clicks Send; system receives the message and delivers it in real time to all connected users in global chat or private chat.  |
-| UC-02 | Receive Message | Connected User | System notifies user of incoming message and displays it in the conversation view without page refresh. They will also receive in real time without refreshing the number of active users and user status (typing, active, offline) |
-| UC-03 | Maintain List of Users/Friends | Connected User | Users can follow/add users/friends and view them in a list. They can also make a  private group chats and see users/friends status. |
+| UC-01 | Send Message    | Connected User | Actor types a message and clicks Send; system receives the message and delivers it in real time to all users in chat.  |
+| UC-02 | Receive Message | Connected User | System relays message to users connected to corresponding chat. |
+| UC-03 | List Friends    | Connected User | Users can add other users as friends and view all added accounts. |
 
 
 \---
