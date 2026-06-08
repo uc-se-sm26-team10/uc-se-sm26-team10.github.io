@@ -78,6 +78,12 @@ TODO: add image of TODO/In Progress/Done columns at the end of Sprint 0 and onwa
 
 Include the **use-case diagram** and a **brief description** (1–3 sentences) for each use case. *(Main focus of Sprint 0.)*
 
+### Diagram
+
+[![High Level Use Case Diagram](https://img.plantuml.biz/plantuml/dsvg/NOynpi8m34RtdCBAtk7llwEYIaomW7g0AFa8aOfJnIuBukwqLOU8yUazMtOdwehEpz6Ck2jfffBYGoca0gyfit5USo7RPsPuHQ11K2mveSsOjNCSHv2zG0GSKUWuJPRUXcWMU2UBku43hO6BsAQ7_g_sLtYa5twIjaxEIPHE9O63xFxVVFO3c-QmhQofhMXjEt1ONlq2)](https://editor.plantuml.com/uml/NOynpi8m34RtdCBAtk7llwEYIaomW7g0AFa8aOfJnIuBukwqLOU8yUazMtOdwehEpz6Ck2jfffBYGoca0gyfit5USo7RPsPuHQ11K2mveSsOjNCSHv2zG0GSKUWuJPRUXcWMU2UBku43hO6BsAQ7_g_sLtYa5twIjaxEIPHE9O63xFxVVFO3c-QmhQofhMXjEt1ONlq2)
+
+### Brief Description
+
 | UC ID | Use Case | Primary Actor | Brief Description |
 | :--- | :--- | :--- | :--- |
 | UC-01 | Send Message    | Connected User | Actor types a message and clicks Send; system receives the message and delivers it in real time to all connected users in global chat or private chat.  |
