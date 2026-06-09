@@ -81,7 +81,7 @@ Include the **use-case diagram** and a **brief description** (1–3 sentences) f
 
 ### Diagram
 
-[![High Level Use Case Diagram](https://img.plantuml.biz/plantuml/dsvg/NOynpi8m34RtdCBAtk7llwEYIaomW7g0AFa8aOfJnIuBukwqLOU8yUazMtOdwehEpz6Ck2jfffBYGoca0gyfit5USo7RPsPuHQ11K2mveSsOjNCSHv2zG0GSKUWuJPRUXcWMU2UBku43hO6BsAQ7_g_sLtYa5twIjaxEIPHE9O63xFxVVFO3c-QmhQofhMXjEt1ONlq2)](https://editor.plantuml.com/uml/NOynpi8m34RtdCBAtk7llwEYIaomW7g0AFa8aOfJnIuBukwqLOU8yUazMtOdwehEpz6Ck2jfffBYGoca0gyfit5USo7RPsPuHQ11K2mveSsOjNCSHv2zG0GSKUWuJPRUXcWMU2UBku43hO6BsAQ7_g_sLtYa5twIjaxEIPHE9O63xFxVVFO3c-QmhQofhMXjEt1ONlq2)
+[![High Level Use Case Diagram](https://img.plantuml.biz/plantuml/svg/NP313e8m38RlUufcTmu2PuCXyQGN2G-mZ3gNp8sqnSGOtzr1E837lz_NDct3OaYcPr01xmAIWBnx20oUq8fFKHahYK2tASPSmG5wHj9W61QYPiz45n3q5PanEYGuZQE6ZmAO6AtXp3gC0yo2SRXqz-rXoszeqR_mJoctoiMpm9bydiGhhtOyEH-XGpiHXlTgrEgxdb0KnsNfDfMxLErIhPgyAR_c1m00)](https://editor.plantuml.com/uml/NP313e8m38RlUufcTmu2PuCXyQGN2G-mZ3gNp8sqnSGOtzr1E837lz_NDct3OaYcPr01xmAIWBnx20oUq8fFKHahYK2tASPSmG5wHj9W61QYPiz45n3q5PanEYGuZQE6ZmAO6AtXp3gC0yo2SRXqz-rXoszeqR_mJoctoiMpm9bydiGhhtOyEH-XGpiHXlTgrEgxdb0KnsNfDfMxLErIhPgyAR_c1m00)
 
 ### Brief Description
 
@@ -90,7 +90,7 @@ Include the **use-case diagram** and a **brief description** (1–3 sentences) f
 | UC-01 | Send Message    | Connected User | Actor types a message and clicks Send; system receives the message and delivers it in real time to all connected users in global chat or private chat.  |
 | UC-02 | Receive Message | Connected User | System notifies user of incoming message and displays it in the conversation view without page refresh. They will also receive in real time without refreshing the number of active users and user status (typing, active, offline) |
 | UC-03 | List Friends    | Connected User | Users can follow/add users/friends and view them in a list. They can also make a  private group chats and see users/friends status. |
-
+| UC-04 | Login Securely     | Connected User | Users are the only ones able to access their accounts and can do so with their unique username across multiple devices. |
 
 \---
 
