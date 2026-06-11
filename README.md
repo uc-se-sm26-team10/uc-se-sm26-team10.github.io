@@ -121,7 +121,15 @@ For each use case in §Use Cases, describe how it is realized in code: which mod
 
 ## User Interface
 
-Embed UI mockups or screenshots and describe the interaction model. Wireframes are acceptable for Sprint 1; final screenshots for Sprint 3. *(Sprint 1 onward.)*
+### UI Mockup: Use-Case-01
+This Mockup is of the UI after sending a message. Interactable elements are purposely limited in this iteration. The white bar across the bottom can be clicked into for message typing, the grey triangle within that bar sends the message when clicked, and the three lines in the top corner can be clicked to see users currently online, as well as to access your friend list and other chats. The sent message is distinct from others due to the mirrored user icon.
+
+![Use Case: sending a message](images/Use-Case-01_UI.png)
+
+### UI Mockup: Use-Case-02
+This Mockup is of the UI after receiving a message. Interactable elements are the same as above, with the typing bar, sending triangle, and three line menu. The received message has a blue dot in the corner, indicating it hasn't been viewed yet.
+
+![Use Case: receiving a message](images/Use-Case-02_UI.png)
 
 ## Database
 
