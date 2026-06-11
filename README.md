@@ -136,23 +136,23 @@ This section documents how your team applies the **Secure Software Development L
 
 List security requirements alongside functional requirements. *(Sprint 0.)*
 
-* **SR-1:** *Tentative* - Uploaded files must past a scan for known malware
-* **SR-2:** TODO — *e.g., Passwords must be hashed with bcrypt (cost ≥ 12); plaintext passwords must never be logged or stored.*
-* **SR-3:** TODO — *e.g., All authentication tokens must be transmitted over HTTPS only.*
+* **SR-1:** Malware Protection - All files introduced by the team will be scanned for malware [MalwareBytes, VirusTotal]. In an ideal situation, we would do a baseline system file hash and then re-hash every month to check for tampering.
+* **SR-2:** Password Protection — *All passwords and sensitive information will be salted and then hashed for protection. SHA256 or higher, not MD5 hash.*
+* **SR-3:** XSS Injection Protection - *All text entered by the user will be 'cleansed' before being sent [for example, '</' will be turned into '<' to mess-up the script tag], primarily for login*
 
 ## Threat Model
 
 Identify assets, trust boundaries, and threats. STRIDE or attack-tree format is acceptable. *(Sprint 0–1.)*
 
 |Asset|Threat|Mitigation|
-|-|-|-|
-|User credentials|Credential stuffing|Rate limiting + bcrypt|
+|Project passwords|Threat actor could view source code and steal passwords|all passwords will be stored on a .gitignore file and will only be accessable on the backend|
+|User credentials as a whole|Credential stuffing and/or script injection|Rate limiting + text cleansing + salting then hashing sensitive info|
 |TODO|TODO|TODO|
 
 ## Security Review Notes
 
 Summarize findings from your Sprint 2 security review and any remediation taken. *(Sprint 2 onward.)*
-
+-[] TODO
 \---
 
 # Implementation
