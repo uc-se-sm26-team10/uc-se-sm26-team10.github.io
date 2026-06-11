@@ -73,7 +73,7 @@ List the high-level functional and non-functional requirements. These will be re
 ## User Stories \& Product Backlog
 
 * [Scrum Teamp Planning Backlog](https://github.com/orgs/uc-se-sm26-team10/projects/1)  
-TODO: add image of TODO/In Progress/Done columns at the end of Sprint 0 and onwards
+![Sprint 0, June 11 2026](https://i.imgur.com/Oe5rOkb.png)
 
 ## Use Cases
 
