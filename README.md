@@ -80,12 +80,20 @@ List the high-level functional and non-functional requirements. These will be re
 Include the **use-case diagram** and a **brief description** (1–3 sentences) for each use case. *(Main focus of Sprint 0.)*
 
 ### Diagram
+* High Level Use Case Diagram    
+[![High Level Use Case Diagram](https://img.plantuml.biz/plantuml/svg/NP313e8m38RlUufcTmu2PuCXyQGN2G-mZ3gNp8sqnSGOtzr1E837lz_NDct3OaYcPr01xmAIWBnx20oUq8fFKHahYK2tASPSmG5wHj9W61QYPiz45n3q5PanEYGuZQE6ZmAO6AtXp3gC0yo2SRXqz-rXoszeqR_mJoctoiMpm9bydiGhhtOyEH-XGpiHXlTgrEgxdb0KnsNfDfMxLErIhPgyAR_c1m00)](https://editor.plantuml.com/uml/NP313e8m38RlUufcTmu2PuCXyQGN2G-mZ3gNp8sqnSGOtzr1E837lz_NDct3OaYcPr01xmAIWBnx20oUq8fFKHahYK2tASPSmG5wHj9W61QYPiz45n3q5PanEYGuZQE6ZmAO6AtXp3gC0yo2SRXqz-rXoszeqR_mJoctoiMpm9bydiGhhtOyEH-XGpiHXlTgrEgxdb0KnsNfDfMxLErIhPgyAR_c1m00)    
 
-[![High Level Use Case Diagram](https://img.plantuml.biz/plantuml/svg/NP313e8m38RlUufcTmu2PuCXyQGN2G-mZ3gNp8sqnSGOtzr1E837lz_NDct3OaYcPr01xmAIWBnx20oUq8fFKHahYK2tASPSmG5wHj9W61QYPiz45n3q5PanEYGuZQE6ZmAO6AtXp3gC0yo2SRXqz-rXoszeqR_mJoctoiMpm9bydiGhhtOyEH-XGpiHXlTgrEgxdb0KnsNfDfMxLErIhPgyAR_c1m00)](https://editor.plantuml.com/uml/NP313e8m38RlUufcTmu2PuCXyQGN2G-mZ3gNp8sqnSGOtzr1E837lz_NDct3OaYcPr01xmAIWBnx20oUq8fFKHahYK2tASPSmG5wHj9W61QYPiz45n3q5PanEYGuZQE6ZmAO6AtXp3gC0yo2SRXqz-rXoszeqR_mJoctoiMpm9bydiGhhtOyEH-XGpiHXlTgrEgxdb0KnsNfDfMxLErIhPgyAR_c1m00)
-[![Use Case 1: Send Message](https://img.plantuml.biz/plantuml/svg/NP4_JmCn3CNta-uxM9r0D42XB0oeA69aEjq432OnLTHS4YK-f7vxV7yHB9PYl_VpIt8eZ9dxpaDRI6cKShjJ3GMhNgaKF59TeU6OOQDZ26IOx23D6y02RLqbiJlZ4WOMYNSKU1pfVwE6ylViQkgg1VK46Xw1pucWcpR15HZlp0c6zN03AKiVNW9JXhTdBS6kTnyInpDGb_Yy-kRXdGpr0dR743E10XiXH8OYpBeYNqYEGVq1pBP6R8DiQLzOPBnSwFT2RnQPZ_44VHhbagwN1mdOhKdsatQEyfaZMeE5L_1asuxyzy0HqFlXxl9uPTst_MNfaTKAotZ232wadk7BaRUB_45aunKFKkK_Vm00)](https://editor.plantuml.com/uml/NP4_JmCn3CNta-uxM9r0D42XB0oeA69aEjq432OnLTHS4YK-f7vxV7yHB9PYl_VpIt8eZ9dxpaDRI6cKShjJ3GMhNgaKF59TeU6OOQDZ26IOx23D6y02RLqbiJlZ4WOMYNSKU1pfVwE6ylViQkgg1VK46Xw1pucWcpR15HZlp0c6zN03AKiVNW9JXhTdBS6kTnyInpDGb_Yy-kRXdGpr0dR743E10XiXH8OYpBeYNqYEGVq1pBP6R8DiQLzOPBnSwFT2RnQPZ_44VHhbagwN1mdOhKdsatQEyfaZMeE5L_1asuxyzy0HqFlXxl9uPTst_MNfaTKAotZ232wadk7BaRUB_45aunKFKkK_Vm00)
-[![Use Case 2: Receive Message](https://img.plantuml.biz/plantuml/svg/fP4nJmCn38Nt_8gdJZ0SQWiJ0sgLcUbq4xh1JIo8b4jEiLk9Vu_RSb1c5Wz-xtssPRSJfQR7AMCGxZnPMM-wdaliNbc4tjdDPaWXpLGKgvxRYTiA9EZ_AZudBdfHlAEWjLclbi91EPxfrzJWUdGly7Z6eLMAWKJ19ulUHLAwXrPGpWW_qN012zxslbjl7pQZewm87wIOhYjUyyulO8eHcanKckObjntF1dCCveX9vaoVI0MDPQv5M42DwMOAPs4OGe_ohm7VY5lwu_ZBaj2gtMjd7wfgdHRFasrGejjPiVUuBm00)](https://editor.plantuml.com/uml/fP4nJmCn38Nt_8gdJZ0SQWiJ0sgLcUbq4xh1JIo8b4jEiLk9Vu_RSb1c5Wz-xtssPRSJfQR7AMCGxZnPMM-wdaliNbc4tjdDPaWXpLGKgvxRYTiA9EZ_AZudBdfHlAEWjLclbi91EPxfrzJWUdGly7Z6eLMAWKJ19ulUHLAwXrPGpWW_qN012zxslbjl7pQZewm87wIOhYjUyyulO8eHcanKckObjntF1dCCveX9vaoVI0MDPQv5M42DwMOAPs4OGe_ohm7VY5lwu_ZBaj2gtMjd7wfgdHRFasrGejjPiVUuBm00)
+* Use Case 1: Send Message  
+[![Use Case 1: Send Message](https://img.plantuml.biz/plantuml/svg/NP4_JmCn3CNta-uxM9r0D42XB0oeA69aEjq432OnLTHS4YK-f7vxV7yHB9PYl_VpIt8eZ9dxpaDRI6cKShjJ3GMhNgaKF59TeU6OOQDZ26IOx23D6y02RLqbiJlZ4WOMYNSKU1pfVwE6ylViQkgg1VK46Xw1pucWcpR15HZlp0c6zN03AKiVNW9JXhTdBS6kTnyInpDGb_Yy-kRXdGpr0dR743E10XiXH8OYpBeYNqYEGVq1pBP6R8DiQLzOPBnSwFT2RnQPZ_44VHhbagwN1mdOhKdsatQEyfaZMeE5L_1asuxyzy0HqFlXxl9uPTst_MNfaTKAotZ232wadk7BaRUB_45aunKFKkK_Vm00)](https://editor.plantuml.com/uml/NP4_JmCn3CNta-uxM9r0D42XB0oeA69aEjq432OnLTHS4YK-f7vxV7yHB9PYl_VpIt8eZ9dxpaDRI6cKShjJ3GMhNgaKF59TeU6OOQDZ26IOx23D6y02RLqbiJlZ4WOMYNSKU1pfVwE6ylViQkgg1VK46Xw1pucWcpR15HZlp0c6zN03AKiVNW9JXhTdBS6kTnyInpDGb_Yy-kRXdGpr0dR743E10XiXH8OYpBeYNqYEGVq1pBP6R8DiQLzOPBnSwFT2RnQPZ_44VHhbagwN1mdOhKdsatQEyfaZMeE5L_1asuxyzy0HqFlXxl9uPTst_MNfaTKAotZ232wadk7BaRUB_45aunKFKkK_Vm00)    
 
-[![Use Case 4: Login Securely](https://img.plantuml.biz/plantuml/svg/JP0n3i8m34NtdEAhErT0bH0R6-e1hCIq4Qc371S6nDr9KWOMIzz-tz_oM8pKjZMvn3U3PMYS5qE8ojvY5aVUic8uPP7QuO2fi0wWWiarXcHEZ2lhanLl1so5FHN6S1QhhIfLQ6MG13oeb5VMqFtSvl-6qyB-ZfJdAF3AeGAHKkcmRxD_-DAnUZ1vdpUnJdMl-xW9XyFn5z0hgjnNzDhapkvfLKvkP0dj4ry0)](https://editor.plantuml.com/uml/JP0n3i8m34NtdEAhErT0bH0R6-e1hCIq4Qc371S6nDr9KWOMIzz-tz_oM8pKjZMvn3U3PMYS5qE8ojvY5aVUic8uPP7QuO2fi0wWWiarXcHEZ2lhanLl1so5FHN6S1QhhIfLQ6MG13oeb5VMqFtSvl-6qyB-ZfJdAF3AeGAHKkcmRxD_-DAnUZ1vdpUnJdMl-xW9XyFn5z0hgjnNzDhapkvfLKvkP0dj4ry0)
+* Use Case 2: Receive Message  
+[![Use Case 2: Receive Message](https://img.plantuml.biz/plantuml/svg/fP4nJmCn38Nt_8gdJZ0SQWiJ0sgLcUbq4xh1JIo8b4jEiLk9Vu_RSb1c5Wz-xtssPRSJfQR7AMCGxZnPMM-wdaliNbc4tjdDPaWXpLGKgvxRYTiA9EZ_AZudBdfHlAEWjLclbi91EPxfrzJWUdGly7Z6eLMAWKJ19ulUHLAwXrPGpWW_qN012zxslbjl7pQZewm87wIOhYjUyyulO8eHcanKckObjntF1dCCveX9vaoVI0MDPQv5M42DwMOAPs4OGe_ohm7VY5lwu_ZBaj2gtMjd7wfgdHRFasrGejjPiVUuBm00)](https://editor.plantuml.com/uml/fP4nJmCn38Nt_8gdJZ0SQWiJ0sgLcUbq4xh1JIo8b4jEiLk9Vu_RSb1c5Wz-xtssPRSJfQR7AMCGxZnPMM-wdaliNbc4tjdDPaWXpLGKgvxRYTiA9EZ_AZudBdfHlAEWjLclbi91EPxfrzJWUdGly7Z6eLMAWKJ19ulUHLAwXrPGpWW_qN012zxslbjl7pQZewm87wIOhYjUyyulO8eHcanKckObjntF1dCCveX9vaoVI0MDPQv5M42DwMOAPs4OGe_ohm7VY5lwu_ZBaj2gtMjd7wfgdHRFasrGejjPiVUuBm00)    
+
+* Use Case 3: Maintain List of Users/Friends  
+[![Use Case 3: Maintain List of Users/Friends](https://img.plantuml.biz/plantuml/svg/ZL9DJuD04BsJy1yclNWfKUBDWwcXCHwgJKhu0PjbscwwtSMTGV--iq2n0QEIm8Pzyzwy-LWHgy3jsK95c1LAFdVtsQioZkNDDeOus-up0GFTFWU3hgOqIHEbsGTO5Duvr8nrf8S5A89g1BTyn705v6dII3AZJQCS2zcA77TOCO5A31y3hOpfAiWUeO07ACK0z3vWX-yj4gT94T4oef8NPx3Gymj_umy4Kfo75t_6HXtmYZumQ50WYEKlXxyRiSAAMrg2cdcGdfIN53laDhX_YIXhvqBVPgL1-aJWtIG8tZoRlT6AZNU3_ogNye_-atuMbQ5O7lbhT4PcbYOWpzZRxdRMlHWoTcYD5daUWvPm57_I6XjPYObwV_sxV3-_RjdYwCTzYq7bNnvS7SjSoIdh_0K0)](https://editor.plantuml.com/uml/ZL9DJuD04BsJy1yclNWfKUBDWwcXCHwgJKhu0PjbscwwtSMTGV--iq2n0QEIm8Pzyzwy-LWHgy3jsK95c1LAFdVtsQioZkNDDeOus-up0GFTFWU3hgOqIHEbsGTO5Duvr8nrf8S5A89g1BTyn705v6dII3AZJQCS2zcA77TOCO5A31y3hOpfAiWUeO07ACK0z3vWX-yj4gT94T4oef8NPx3Gymj_umy4Kfo75t_6HXtmYZumQ50WYEKlXxyRiSAAMrg2cdcGdfIN53laDhX_YIXhvqBVPgL1-aJWtIG8tZoRlT6AZNU3_ogNye_-atuMbQ5O7lbhT4PcbYOWpzZRxdRMlHWoTcYD5daUWvPm57_I6XjPYObwV_sxV3-_RjdYwCTzYq7bNnvS7SjSoIdh_0K0)  
+
+* Use Case 4: Login Securely  
+[![Use Case 4: Login Securely](https://img.plantuml.biz/plantuml/svg/JP0n3i8m34NtdEAhErT0bH0R6-e1hCIq4Qc371S6nDr9KWOMIzz-tz_oM8pKjZMvn3U3PMYS5qE8ojvY5aVUic8uPP7QuO2fi0wWWiarXcHEZ2lhanLl1so5FHN6S1QhhIfLQ6MG13oeb5VMqFtSvl-6qyB-ZfJdAF3AeGAHKkcmRxD_-DAnUZ1vdpUnJdMl-xW9XyFn5z0hgjnNzDhapkvfLKvkP0dj4ry0)](https://editor.plantuml.com/uml/JP0n3i8m34NtdEAhErT0bH0R6-e1hCIq4Qc371S6nDr9KWOMIzz-tz_oM8pKjZMvn3U3PMYS5qE8ojvY5aVUic8uPP7QuO2fi0wWWiarXcHEZ2lhanLl1so5FHN6S1QhhIfLQ6MG13oeb5VMqFtSvl-6qyB-ZfJdAF3AeGAHKkcmRxD_-DAnUZ1vdpUnJdMl-xW9XyFn5z0hgjnNzDhapkvfLKvkP0dj4ry0)   
 
 ### Brief Description
 
@@ -113,7 +121,15 @@ For each use case in §Use Cases, describe how it is realized in code: which mod
 
 ## User Interface
 
-Embed UI mockups or screenshots and describe the interaction model. Wireframes are acceptable for Sprint 1; final screenshots for Sprint 3. *(Sprint 1 onward.)*
+### UI Mockup: Use-Case-01
+This Mockup is of the UI after sending a message. Interactable elements are purposely limited in this iteration. The white bar across the bottom can be clicked into for message typing, the grey triangle within that bar sends the message when clicked, and the three lines in the top corner can be clicked to see users currently online, as well as to access your friend list and other chats. The sent message is distinct from others due to the mirrored user icon.
+
+![Use Case: sending a message](images/Use-Case-01_UI.png)
+
+### UI Mockup: Use-Case-02
+This Mockup is of the UI after receiving a message. Interactable elements are the same as above, with the typing bar, sending triangle, and three line menu. The received message has a blue dot in the corner, indicating it hasn't been viewed yet.
+
+![Use Case: receiving a message](images/Use-Case-02_UI.png)
 
 ## Database
 
