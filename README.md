@@ -138,7 +138,7 @@ List security requirements alongside functional requirements. *(Sprint 0.)*
 
 * **SR-1:** Malware Protection - All files introduced by the team will be scanned for malware [MalwareBytes, VirusTotal]. In an ideal situation, we would do a baseline system file hash and then re-hash every month to check for tampering.
 * **SR-2:** Password Protection — *All passwords and sensitive information will be salted and then hashed for protection. SHA256 or higher, not MD5 hash.*
-* **SR-3:** XSS Injection Protection - *All text entered by the user will be 'cleansed' before being sent [for example, '</' will be turned into '<' to mess-up the script tag], primarily for login*
+* **SR-3:** XSS Injection Protection - *All text entered by the user will be 'cleansed' before being sent [for example, '</' will be turned into '<' to mess-up the script tag], primarily for login.*
 
 ## Threat Model
 
@@ -147,7 +147,7 @@ Identify assets, trust boundaries, and threats. STRIDE or attack-tree format is 
 |Asset|Threat|Mitigation|
 |Project passwords|Threat actor could view source code and steal passwords|all passwords will be stored on a .gitignore file and will only be accessable on the backend|
 |User credentials as a whole|Credential stuffing and/or script injection|Rate limiting + text cleansing + salting then hashing sensitive info|
-|TODO|TODO|TODO|
+|Users own credentials as a single person|Password being stolen|2FA using TOTP|
 
 ## Security Review Notes
 
