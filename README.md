@@ -96,7 +96,8 @@ Include the **use-case diagram** and a **brief description** (1–3 sentences) f
 
 # System Design
 
-*Start in Sprint 1; keep updating.*
+<img width="542" height="444" alt="Screenshot 2026-06-11 183800" src="https://github.com/user-attachments/assets/90a8a679-f03a-49b4-83e0-434ff46adf18" />
+
 
 ## Architecture
 
