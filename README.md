@@ -278,7 +278,7 @@ Establish the general objectives for the project and design the software archite
 |Member|Hours|Contribution Summary|
 |Joe Wilkie|9|TODO|
 |Khoi Tran|9|TODO|
-|Skylar Bleau|9|TODO|
+|Skylar Bleau|9|...|
 |Noah Batcher|9|TODO|
 
 #### Sprint Retrospective
