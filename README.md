@@ -264,25 +264,24 @@ Establish the general objectives for the project and design the software archite
 
 #### Completed PBIs / Tasks
 
-1. TODO
-2. TODO
-3. TODO
+1. Created detailed and achieavable PBI list of Use Cases, Scenarios, and Personas
+2. Outlined the future immediate actions needed to keep sensitive information secure
+3. ...
 
 #### Contributions
 
 |Member|Hours|Contribution Summary|
-|-|-|-|
-|Joe Wilkie|X|TODO|
-|Khoi Tran|X|TODO|
-|Skylar Bleau|X|TODO|
-|Noah Batcher|X|TODO|
+|Joe Wilkie|9|TODO|
+|Khoi Tran|9|TODO|
+|Skylar Bleau|9|TODO|
+|Noah Batcher|9|TODO|
 
 #### Sprint Retrospective
 
 |Good|Could have been better|How to improve|
-|-|-|-|
-||||
-||||
+|Assigned work fully completed|Submitting earlier for extra credit|Being more punctual with work and submitting earlier|
+|Feature list amount|Feature list nuance/depth|For each feature, give criteria/description to understand what is expected|
+|...|...|...|
 
 ### Sprint 1
 
