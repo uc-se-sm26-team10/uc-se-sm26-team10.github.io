@@ -136,7 +136,7 @@ chat messages.
 
 ## Architecture
 
-The system architecture will not differ from the high-level overview diagram. The user will interact with the server through their client-side browser. The clients browser will utilize the web code stack (HTML, CSS, and JavaScript) to interact with the server, which will use node.js to host, HTTP(normal requests), and socket.io(real time communication) for real time interactions between users. The server will store data using MongoDB Atlas, this will include usernames, passwords, user status, friend requests, and friends lists. The user status will show if they are online, offline, or currently typing. 
+The system architecture will not differ from the high-level overview diagram. The user will interact with the server through their client-side browser. The clients browser will utilize the web code stack (HTML, CSS, and JavaScript) to interact with the server, which will use node.js to host, HTTP(normal requests), and socket.io(real time communication). The server will store data using MongoDB Atlas, this will include usernames, passwords, user status, friend requests, and friends lists. The user status will show if they are online, offline, or currently typing. 
 
 
 ## Use-Case Realization
