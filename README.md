@@ -1,8 +1,6 @@
 # README.md — Scrum Project Report Template
 
-> \_\*\*Note:\*\* This is a starter template for your team to begin Sprint 0.\_
-> \_It is the \*\*minimum\*\* required structure for your final report and is expected to grow across sprints.\_
-> \_Your team may add sections; please discuss any \*\*removal\*\* of a section with the instructor (open a pull request).\_
+*Your team may add sections; please discuss any \*\*removal\*\* of a section with the instructor (open a pull request).*
 
 **University of Cincinnati**
 
@@ -14,11 +12,11 @@
 
 # Scrum Project — Messenger
 
+*Refined across all sprints*
+
 Messenger is a real-time web-based chat application that allows registered users to communicate through public, private, and group messaging with additional features.
 
 ## Team Members
-
-*Teams are 3–4 students (per syllabus). Solo teams are not permitted.*
 
 1. Joe Wilkie — wilkiejj@mail.uc.edu — Product Owner
 2. Khoi Tran — tran2ki@mail.uc.edu — Scrum Master
@@ -49,7 +47,7 @@ Messenger is a real-time web-based chat application that allows registered users
 
 # Overview
 
-*Start in Sprint 0; refine across all sprints.*
+*Refined across all sprints*
 For far too long, we have been complacent with the lack-luster levels of communication offered by the current messaging platforms. The interfaces are often too complex and provide minimal details, and quality customization and optimization of these apps is very rare. That's what we are working to change.
 
 -# Describe the project in 2–4 paragraphs: the problem it addresses, the target users, and a high-level summary of the proposed solution. Include a **high-level architecture diagram**
@@ -58,11 +56,9 @@ For far too long, we have been complacent with the lack-luster levels of communi
 
 # System Analysis
 
-*Start in Sprint 0; keep updating.*
-
 ## User Requirements
 
-List the high-level functional and non-functional requirements. These will be refined into user stories and use cases. *(Main focus of Sprint 0.)*
+High-level functional and non-functional requirements.
 
 * **FR-1:** Send Messages — *As a user, I want to send messages to other users with instant sending so that communication is seemless.*
 * **FR-2:** Recieve Messages -  *As a user, I want to recieve messages from other users with instant recieving so that communication is seemless.*
@@ -76,8 +72,6 @@ List the high-level functional and non-functional requirements. These will be re
 ![Sprint 0, June 11 2026](https://i.imgur.com/Oe5rOkb.png)
 
 ## Use Cases
-
-Include the **use-case diagram** and a **brief description** (1–3 sentences) for each use case. *(Main focus of Sprint 0.)*
 
 ### Diagram
 * High Level Use Case Diagram    
@@ -187,7 +181,7 @@ List security requirements alongside functional requirements. *(Sprint 0.)*
 
 ## Threat Model
 
-Identify assets, trust boundaries, and threats. STRIDE or attack-tree format is acceptable. *(Sprint 0–1.)*
+Identify assets, trust boundaries, and threats. STRIDE or attack-tree format is acceptable.
 
 |Asset|Threat|Mitigation|
 |-|-|-|
@@ -283,9 +277,7 @@ Per the course academic integrity policy, the team must document all AI-assisted
 
 # Software Process Management
 
-*Start in Sprint 0; keep updating.*
-
-Describe how your team applies **Scrum**: roles, ceremonies (sprint planning, daily stand-ups, review, retrospective), and tools (GitHub Projects board, GitHub Issues, pull requests).
+*Refiend across all sprints*
 
 Our team plans to meet weekly at the class's Lab, Thursday 6-9:00 PM for the project and related discussion, including Scrum. Outside of that timeframe, plannings, discussions, and more will be held via the groups' Discord server.
 Tools we will use for Scrum will be GitHub Projects, Issues, pull requests.
@@ -297,8 +289,6 @@ Include:
 * A **Roadmap view** screenshot from GitHub Projects, or a timeline produced from issue milestones. *(Note: GitHub Projects has a Roadmap view rather than a true Gantt chart; a Roadmap screenshot satisfies this requirement.)*
 
 ## Scrum Process
-
-> Copy the block below for each sprint (Sprint 0, 1, 2, 3).
 
 ### Sprint 0
 
