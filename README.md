@@ -287,7 +287,7 @@ Establish the general objectives for the project and design the software archite
 
 1. Created detailed and achieavable PBI list of Use Cases, Scenarios, and Personas
 2. Outlined the future immediate actions needed to keep sensitive information secure
-3. ...
+3. UI mockups and design concepts created
 
 #### Contributions
 
@@ -295,7 +295,7 @@ Establish the general objectives for the project and design the software archite
 |------|-----|---------------------|
 |Joe Wilkie|9|TODO|
 |Khoi Tran|9|TODO|
-|Skylar Bleau|9|...|
+|Skylar Bleau|9|Created organization, helped create PBIs, created html mockup barebones for login and chat UI|
 |Noah Batcher|9|TODO|
 
 #### Sprint Retrospective
