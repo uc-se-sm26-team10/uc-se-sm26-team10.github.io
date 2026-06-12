@@ -300,7 +300,6 @@ Establish the general objectives for the project, establish use cases to address
 |Khoi Tran|9|Overall help, managing project board|
 |Skylar Bleau|9|Created organization, helped create PBIs, created html mockup barebones for login and chat UI|
 |Noah Batcher|9|Participated in all use case setup, System design architecture diagram, helped with general project board setup |
-|Noah Batcher|9|TODO|
 
 #### Sprint Retrospective
 
