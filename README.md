@@ -165,10 +165,11 @@ List security requirements alongside functional requirements. *(Sprint 0.)*
 
 Identify assets, trust boundaries, and threats. STRIDE or attack-tree format is acceptable. *(Sprint 0–1.)*
 
-| Asset | Threat | Mitigation |
-| Project passwords| Threat actor could view source code and steal passwords| all passwords will be stored on a .gitignore file and will only be accessable on the backend |
-| User credentials as a whole | Credential stuffing and/or script injection | Rate limiting + text cleansing + salting then hashing sensitive info |
-| Users own credentials as a single person |Password being stolen |2FA using TOTP |
+|Asset|Threat|Mitigation|
+|-|-|-|
+|Project passwords|Threat actor could view source code and steal passwords|all passwords will be stored on a .gitignore file and will only be accessable on the backend|
+|User credentials as a whole|Credential stuffing and/or script injection|Rate limiting + text cleansing + salting then hashing sensitive info|
+|Users own credentials as a single person|Password being stolen|2FA using TOTP|
 
 ## Security Review Notes
 
@@ -295,15 +296,9 @@ Establish the general objectives for the project, establish use cases to address
 
 |Member|Hours|Contribution Summary|
 |-|-|-|
-<<<<<<< HEAD
-|Joe Wilkie|9|TODO|
-|Khoi Tran|9|Overall help, managing project board|
-|Skylar Bleau|9|...|
-=======
 |Joe Wilkie|9|UI Diagrams, Use-Case Diagrams, Administrative Changes|
 |Khoi Tran|9|TODO|
 |Skylar Bleau|9|Created organization, helped create PBIs, created html mockup barebones for login and chat UI|
->>>>>>> 038a94a124417b0b3b4c9416f40d4efedbb938f5
 |Noah Batcher|9|TODO|
 
 #### Sprint Retrospective
@@ -313,7 +308,7 @@ Establish the general objectives for the project, establish use cases to address
 |Assigned work fully completed|Submitting earlier for extra credit|Being more punctual with work and submitting earlier|
 |Feature list amount|Feature list nuance/depth|For each feature, give criteria/description to understand what is expected|
 |Division of labor|Tracking of individual tasks|Use PBI board to maintain list of responsibilities per person|
-|Communication and updates|Communicate more often to clarify work points|Weekend checkups on projects and repos|
+
 ### Sprint 1
 
 **Duration:** 2026-06-15 to 2026-06-28
