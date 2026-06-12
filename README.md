@@ -295,7 +295,7 @@ Establish the general objectives for the project, establish use cases to address
 
 |Member|Hours|Contribution Summary|
 |-|-|-|
-|Joe Wilkie|9|TODO|
+|Joe Wilkie|9|UI Diagrams, Use-Case Diagrams, Administrative Changes|
 |Khoi Tran|9|TODO|
 |Skylar Bleau|9|Created organization, helped create PBIs, created html mockup barebones for login and chat UI|
 |Noah Batcher|9|TODO|
