@@ -295,7 +295,7 @@ Establish the general objectives for the project, establish use cases to address
 |Member|Hours|Contribution Summary|
 |-|-|-|
 |Joe Wilkie|9|TODO|
-|Khoi Tran|9|TODO|
+|Khoi Tran|9|Overall help, managing project board|
 |Skylar Bleau|9|...|
 |Noah Batcher|9|TODO|
 
@@ -306,7 +306,7 @@ Establish the general objectives for the project, establish use cases to address
 |Assigned work fully completed|Submitting earlier for extra credit|Being more punctual with work and submitting earlier|
 |Feature list amount|Feature list nuance/depth|For each feature, give criteria/description to understand what is expected|
 |Division of labor|Tracking of individual tasks|Use PBI board to maintain list of responsibilities per person|
-
+|Communication and updates|Communicate more often to clarify work points|Weekend checkups on projects and repos|
 ### Sprint 1
 
 **Duration:** 2026-06-15 to 2026-06-28
