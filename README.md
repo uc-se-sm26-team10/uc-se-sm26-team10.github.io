@@ -128,6 +128,7 @@ chat messages.
 - AC-04.2: Alerts users when password is incorrect
 - AC-04.3: Other users can't send/receive messages on an account they aren't logged in to
 - AC-04.4: Users can't inject scripts into username/password field
+
 # System Design
 
 <img width="542" height="444" alt="System Design Architecture Diagram" src="https://github.com/user-attachments/assets/90a8a679-f03a-49b4-83e0-434ff46adf18" />
