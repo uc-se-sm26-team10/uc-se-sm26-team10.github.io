@@ -105,6 +105,29 @@ Include the **use-case diagram** and a **brief description** (1–3 sentences) f
 | UC-04 | Login Securely     | Connected User | Users are the only ones able to access their accounts and can do so with their unique username across multiple devices. |
 
 \---
+### Acceptance Criteria
+- AC-01.1: a message input field and a Send button are present and usable on the chat screen.
+- AC-01.2: when the input field is empty and Send is clicked or Enter is pressed, no message appears
+in the chat.
+- AC-01.3: when a non-empty message is sent, it appears in the chat window of all connected users
+immediately.
+- AC-01.4: each message displayed in the chat shows the sender's username alongside the message
+text.
+- AC-01.5: after a message is sent, the input field is cleared and ready for the next message.
+- AC-02.1: incoming chat messages are displayed in the responses area without page refresh.
+- AC-02.2: each message shows a timestamp alongside the message text.
+- AC-02.3: system status events (join/leave) are displayed in the status area, visually separate from
+chat messages.
+- AC-02.4: the status area auto-scrolls to the latest system event.
+- AC-03.1: User can view list of friends and choose to message them
+- AC-03.2: User can see whether a friends is offline or online
+- AC-03.3: User can request to be friends with other users
+- AC-03.4: User can see request to be friends from other users they are not friends with
+- AC-03.5: User can accept or decline friend request sent to them
+- AC-04.1: No letters of the password are visible while typing when logging in
+- AC-04.2: Alerts users when password is incorrect
+- AC-04.3: Other users can't send/receive messages on an account they aren't logged in to
+- AC-04.4: Users can't inject scripts into username/password field
 
 # System Design
 
