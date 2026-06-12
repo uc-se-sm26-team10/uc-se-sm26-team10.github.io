@@ -292,6 +292,7 @@ Establish the general objectives for the project and design the software archite
 #### Contributions
 
 |Member|Hours|Contribution Summary|
+|------|-----|---------------------|
 |Joe Wilkie|9|TODO|
 |Khoi Tran|9|TODO|
 |Skylar Bleau|9|...|
@@ -300,9 +301,9 @@ Establish the general objectives for the project and design the software archite
 #### Sprint Retrospective
 
 |Good|Could have been better|How to improve|
+|-----|---------------------|--------------|
 |Assigned work fully completed|Submitting earlier for extra credit|Being more punctual with work and submitting earlier|
 |Feature list amount|Feature list nuance/depth|For each feature, give criteria/description to understand what is expected|
-|...|...|...|
 
 ### Sprint 1
 
