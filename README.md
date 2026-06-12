@@ -295,16 +295,10 @@ Establish the general objectives for the project, establish use cases to address
 
 |Member|Hours|Contribution Summary|
 |-|-|-|
-<<<<<<< HEAD
-|Joe Wilkie|9|TODO|
-|Khoi Tran|9|Overall help, managing project board|
-|Skylar Bleau|9|...|
-=======
 |Joe Wilkie|9|UI Diagrams, Use-Case Diagrams, Administrative Changes|
 |Khoi Tran|9|TODO|
 |Skylar Bleau|9|Created organization, helped create PBIs, created html mockup barebones for login and chat UI|
->>>>>>> 038a94a124417b0b3b4c9416f40d4efedbb938f5
-|Noah Batcher|9|TODO|
+|Noah Batcher|9|Participated in all use case setup, System design architecture diagram, helped with general project board setup |
 
 #### Sprint Retrospective
 
