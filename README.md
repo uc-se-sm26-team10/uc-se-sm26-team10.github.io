@@ -308,7 +308,7 @@ Establish the general objectives for the project, establish use cases to address
 4. Documented project in README.md
 5. Created design mockups
 
-![Sprint 0 github projects board](images/s0githubprojectboard)
+![Sprint 0 github projects board](images/s0githubprojectboard.png)
 
 #### Contributions
 
@@ -327,7 +327,7 @@ Establish the general objectives for the project, establish use cases to address
 |Feature list amount|Feature list nuance/depth|For each feature, give criteria/description to understand what is expected|
 |Division of labor|Tracking of individual tasks|Use PBI board to maintain list of responsibilities per person|
 
-![Sprint 0 github roadmap view](images/s0githubroadmap)
+![Sprint 0 github roadmap view](images/s0githubroadmap.png)
 
 ### Sprint 1
 
