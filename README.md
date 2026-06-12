@@ -185,9 +185,10 @@ Identify assets, trust boundaries, and threats. STRIDE or attack-tree format is 
 |Asset|Threat|Mitigation|
 |-|-|-|
 |Project passwords|Threat actor could view source code and steal passwords|all passwords will be stored on a .gitignore file and will only be accessable on the backend|
-|User credentials as a whole|XSS and/or SQL injection|Rate limiting + text cleansing + salting then hashing sensitive info|
+|User credentials as a whole|XSS and/or SQL injection|Text cleansing + salting then hashing sensitive info|
+|Server response times|DDOS attack rendering the server out of service/unusable|Rate limiting for all inputs, more severe for logins|
 |Database security|XSS attack|CSP + blacklisted sites [such as requiring valid security certificate] |
-|Users own credentials as a single person|Password being stolen|2FA using TOTP|
+|Users own credentials as a single person|Spoofing or password being stolen|2FA using TOTP|
 |System architecture| Inconsitent security enforcements [API security], system data leaks due to bad error handling| Enforce uniform logging, authentification, and error handling across the entire codebase |
 
 ## Security Review Notes
