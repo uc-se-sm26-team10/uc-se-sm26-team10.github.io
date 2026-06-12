@@ -48,6 +48,7 @@ Messenger is a real-time web-based chat application that allows registered users
 # Overview
 
 *Refined across all sprints*
+
 For far too long, we have been complacent with the lack-luster levels of communication offered by the current messaging platforms. The interfaces are often too complex and provide minimal details, and quality customization and optimization of these apps is very rare. That's what we are working to change.
 
 -# Describe the project in 2–4 paragraphs: the problem it addresses, the target users, and a high-level summary of the proposed solution. Include a **high-level architecture diagram**
