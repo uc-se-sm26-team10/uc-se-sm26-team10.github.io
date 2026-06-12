@@ -281,18 +281,19 @@ Include:
 
 #### Sprint Goal
 
-Establish the general objectives for the project and design the software architecture.
+Establish the general objectives for the project, establish use cases to address, and design the system architecture.
 
 #### Completed PBIs / Tasks
 
-1. Created detailed and achieavable PBI list of Use Cases, Scenarios, and Personas
-2. Outlined the future immediate actions needed to keep sensitive information secure
-3. ...
+1. Set up team organization and repositories
+2. Created detailed and achieavable PBI list of Use Cases, Scenarios, and Personas
+3. Outlined the future immediate actions needed to keep sensitive information secure
+4. Documented project in README.md
 
 #### Contributions
 
 |Member|Hours|Contribution Summary|
-|------|-----|---------------------|
+|-|-|-|
 |Joe Wilkie|9|TODO|
 |Khoi Tran|9|TODO|
 |Skylar Bleau|9|...|
@@ -301,9 +302,10 @@ Establish the general objectives for the project and design the software archite
 #### Sprint Retrospective
 
 |Good|Could have been better|How to improve|
-|-----|---------------------|--------------|
+|-|-|-|
 |Assigned work fully completed|Submitting earlier for extra credit|Being more punctual with work and submitting earlier|
 |Feature list amount|Feature list nuance/depth|For each feature, give criteria/description to understand what is expected|
+|Division of labor|Tracking of individual tasks|Use PBI board to maintain list of responsibilities per person|
 
 ### Sprint 1
 
