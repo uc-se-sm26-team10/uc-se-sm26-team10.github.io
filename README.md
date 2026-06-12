@@ -165,10 +165,10 @@ List security requirements alongside functional requirements. *(Sprint 0.)*
 
 Identify assets, trust boundaries, and threats. STRIDE or attack-tree format is acceptable. *(Sprint 0–1.)*
 
-|Asset|Threat|Mitigation|
-|Project passwords|Threat actor could view source code and steal passwords|all passwords will be stored on a .gitignore file and will only be accessable on the backend|
-|User credentials as a whole|Credential stuffing and/or script injection|Rate limiting + text cleansing + salting then hashing sensitive info|
-|Users own credentials as a single person|Password being stolen|2FA using TOTP|
+| Asset | Threat | Mitigation |
+| Project passwords| Threat actor could view source code and steal passwords| all passwords will be stored on a .gitignore file and will only be accessable on the backend |
+| User credentials as a whole | Credential stuffing and/or script injection | Rate limiting + text cleansing + salting then hashing sensitive info |
+| Users own credentials as a single person |Password being stolen |2FA using TOTP |
 
 ## Security Review Notes
 
