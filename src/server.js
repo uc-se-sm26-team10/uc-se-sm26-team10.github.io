@@ -7,7 +7,7 @@ const app    = express();
 const server = http.createServer(app);
 const io     = new Server(server);
 
-
+// content security policy setup to-do
 app.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy",
@@ -19,7 +19,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static(path.join(__dirname, 'ui')));
+app.use(express.static( 'ui'));
 
 const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => console.log('Server running on port ' + PORT));
@@ -30,19 +30,20 @@ const userlist = new Map();
 
 io.on('connection', (socket) => {
 
-
-
-
-
   socket.on('login_attempt', function(Username_Client, Password_Client){
+    
+    // grab all users
     const users = require("./ui/users.json");
+    // search for username
     const user = users.find(u => u.username === Username_Client);
 
     if(!user){
+      // User not found Validation error
       socket.emit("Login_Validation", {success: false});
       return;
     }
 
+    // User is found
     socket.emit("Login_Validation", 
       {
         success: true, 

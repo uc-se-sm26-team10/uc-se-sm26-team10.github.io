@@ -8,7 +8,7 @@ socket.on("connect", () => { //connected to the server
 //*********************************************************************************************************************/
 
 
-// Declaring submit button element
+// Submit Button Element
 var submitBtnElm = document.getElementById('Submit-button');
 if (!submitBtnElm){  // Ensuring submit buttons found
     console.log("Error in getting 'Submit-button' button");
@@ -45,14 +45,17 @@ function LoginAttempt() {
 //*********************************************************************************************************************/
 socket.on('Login_Validation', function(data){
 
+    // checking if login was successful
     if(!data.success){
         console.log("Login failed:", data.message);
         alert("Error: Login Failed!");
         return;
     }
 
+    // Login was successful, saving data in session storage
     sessionStorage.setItem("nickname", data.nickname);
     sessionStorage.setItem("friends", JSON.stringify(data.friends));
 
+    // opening chat window
     window.location.href = "dummy_chat.html";
 });
