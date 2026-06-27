@@ -1,9 +1,21 @@
 
 [
   {
+    "username": "RowBoat",
+    "password": "to-do",
+    "nickname": "Rowan",
+    "friends": ["to-do"]
+  },
+  {
     "username": "nbatcher",
     "password": "to-do",
     "nickname": "Noah",
+    "friends": ["to-do"]
+  },
+  {
+    "username": "Jman1234",
+    "password": "to-do",
+    "nickname": "Jake",
     "friends": ["to-do"]
   }
 ]
