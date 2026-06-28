@@ -7,6 +7,12 @@
     "friends": ["to-do"]
   },
   {
+    "username": "skylar",
+    "password": "to-do",
+    "nickname": "Skylar",
+    "friends": ["to-do"]
+  },
+  {
     "username": "nbatcher",
     "password": "to-do",
     "nickname": "Noah",
