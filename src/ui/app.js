@@ -70,6 +70,7 @@ function sendPublicMessage() {
 
 sendBtn.addEventListener('click', sendPublicMessage);
 chatInput.addEventListener('keypress', (e) => {
+    socket.emit("typing"); //telling server user is typing
     if (e.key === 'Enter') sendPublicMessage();
 });
 
@@ -103,4 +104,12 @@ socket.on('user_list_update', (users) => {
         
         onlineUsersList.appendChild(li);
     });
+});
+
+// typing status indicator
+socket.on('typing', function(){
+    console.log("Typing event detected.");
+    $(".ticontainer").show();
+    setTimeout(()=>{$(".ticontainer").hide()},2000);
+    //Hides typing status after 2s. 
 });
