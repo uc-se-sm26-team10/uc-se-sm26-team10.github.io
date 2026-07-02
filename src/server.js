@@ -5,6 +5,7 @@ const path       = require('path');
 const app    = express();
 const server = http.createServer(app);
 const io     = new Server(server);
+const fs = require('fs');
 
 // CSP setup
 app.use((req, res, next) => {
@@ -31,7 +32,10 @@ io.on('connection', (socket) => {
 
   // Login section
   socket.on('login_attempt', function(Username_Client, Password_Client){
-    const users = require("./ui/users.json");
+    // Read fresh file contents synchronously to match existing flow
+    const usersData = fs.readFileSync(path.join(__dirname, 'ui', 'users.json'), 'utf8');
+    const users = JSON.parse(usersData);
+
     const user = users.find(u => u.username === Username_Client);
 
     if(!user){
@@ -91,6 +95,11 @@ io.on('connection', (socket) => {
       userlist.delete(socket.id);
       io.emit('user_list_update', Array.from(userlist.values()));
     }
+  });
+
+  //Leave private room section
+  socket.on('leave_private_room', (roomId) => {
+    socket.leave(roomId);
   });
 
 });
