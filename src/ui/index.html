@@ -68,15 +68,28 @@
         
         <div style="width: 200px; background-color: #f8f9fa; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
           <h3 style="margin-top: 0;">Currently Online Users</h3>
+          <p style="font-size: 0.8em; color: gray;">Click a user to Private Message</p>
           <ul id="online-users" style="list-style-type: none; padding: 0; margin: 0;"></ul>
         </div>
 
-        <div style="width: 600px; background-color: lightgray; padding: 15px; border-radius: 5px;">
+        <div id="public-chat" style="width: 600px; background-color: lightgray; padding: 15px; border-radius: 5px;">
           <h2 style="margin-top: 0;">Live Global Chat (Public)</h2>
           <div id="messages-container" style="height: 350px; overflow-y: auto; background: white; margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></div>
           <div style="display: flex; gap: 5px;">
             <input type="text" id="chat-input" placeholder="Type your message here..." style="flex-grow: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
             <button id="send-button" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #09b3039b; color: white; cursor: pointer;">Send</button>
+          </div>
+        </div>
+        
+        <div id="private-chat" style="display: none; width: 500px; background-color: #d1ecf1; padding: 15px; border-radius: 5px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0;">
+            <h2 id="private-chat-title" style="margin: 0;">Chatting with...</h2>
+            <button id="close-private-btn" style="padding: 5px 10px; cursor: pointer; border-radius: 3px; border: 1px solid #999;">Back to Public</button>
+          </div>
+          <div id="private-messages-container" style="height: 350px; overflow-y: auto; background: white; margin: 10px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></div>
+          <div style="display: flex; gap: 5px;">
+            <input type="text" id="private-chat-input" placeholder="Type private message..." style="flex-grow: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+            <button id="private-send-button" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #17a2b8; color: white; cursor: pointer;">Send</button>
           </div>
         </div>
 

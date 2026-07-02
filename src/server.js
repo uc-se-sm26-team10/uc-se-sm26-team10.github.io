@@ -24,7 +24,7 @@ app.use(express.static('ui'));
 const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => console.log('Server running on port ' + PORT));
 
-// Track active users: socket.id -> nickname
+// Track active users: socket.id -> {username, nickname}
 const userlist = new Map();
 
 io.on('connection', (socket) => {
@@ -39,19 +39,42 @@ io.on('connection', (socket) => {
       return;
     }
 
-    // Add user to tracking map
-    userlist.set(socket.id, user.nickname);
+    // Add username and their nickname to tracking map
+    userlist.set(socket.id, { username: user.username, nickname: user.nickname });
 
     socket.emit("Login_Validation", {
         success: true, 
         nickname: user.nickname, 
-        friends: user.friends
+        friends: user.friends,
+        username: user.username // pass back client's identity
     });
   
     // F1.6: An online user list is displayed and updated in real time
     io.emit('user_list_update', Array.from(userlist.values()));
   });
 
+  // Private chat section
+  // Creates private room for private messaging between two users; 
+  // room ID is a combination of both usernames, sorted alphabetically to ensure uniqueness
+  socket.on('join_private_room', ({ myUsername, targetUsername }) => {
+    // Alphabetically sorting creates an identical, unique room ID for both users
+    const roomId = [myUsername, targetUsername].sort().join('_');
+    socket.join(roomId);
+  });
+  // Private Chat: Passing messages
+  socket.on('private_message', ({ myUsername, targetUsername, message }) => {
+    const senderData = userlist.get(socket.id) || { nickname: "Unknown User" };
+    const roomId = [myUsername, targetUsername].sort().join('_');
+    
+    // Send to everyone inside that explicit room ID
+    io.to(roomId).emit('receive_private_message', { 
+      sender: senderData.nickname, 
+      text: message,
+      room: roomId // roomId to ensure correct routing on client side
+    });
+  });
+
+  // Public chat section
   //  F1.4: Logged-in users can send and reci eve public messages in real time.
   socket.on('public_message', (message) => {
     // Look up the sender's nickname. Fallback to "Unknown" if not found.
