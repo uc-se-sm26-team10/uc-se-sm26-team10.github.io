@@ -81,9 +81,10 @@ io.on('connection', (socket) => {
   // Public chat section
   //  F1.4: Logged-in users can send and reci eve public messages in real time.
   socket.on('public_message', (message) => {
-    // Look up the sender's nickname. Fallback to "Unknown" if not found.
-    const senderNickname = userlist.get(socket.id) || "Unknown User";
-    
+    // Look up the sender's nickname. Fallback to "Unknown User" if not found.
+    const senderData = userlist.get(socket.id);
+    const senderNickname = senderData ? senderData.nickname : "Unknown User";
+
     // Broadcast the message back to everyone
     io.emit('receive_public_message', { sender: senderNickname, text: message });
   });

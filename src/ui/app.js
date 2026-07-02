@@ -142,7 +142,7 @@ socket.on('user_list_update', (users) => {
             privateChatTitle.innerText = `Chatting with ${userObj.nickname}`;
             
             // Clear prior history from shared window container before loading new room
-            privateMessagesContainer.innerHTML = '';
+            privateMessageContainer.innerHTML = '';
             // Hide public panel, show private panel
             publicChat.style.display = 'none';
             privateChat.style.display = 'block';
