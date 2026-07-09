@@ -9,7 +9,7 @@
   
   <script src="/socket.io/socket.io.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.4.8/purify.min.js"></script>
-
+  <link rel="stylesheet" href="styles.css">
   </head>
 <body>
   <header style="text-align: center;">
@@ -75,6 +75,14 @@
         <div id="public-chat" style="width: 600px; background-color: lightgray; padding: 15px; border-radius: 5px;">
           <h2 style="margin-top: 0;">Live Global Chat (Public)</h2>
           <div id="messages-container" style="height: 350px; overflow-y: auto; background: white; margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></div>
+          <div class="ticontainer" style="display:none">
+            <div class="tiblock">
+              <div class="tidot"></div>
+              <div class="tidot"></div>
+              <div class="tidot"></div>
+              </div>
+            </div>
+          
           <div style="display: flex; gap: 5px;">
             <input type="text" id="chat-input" placeholder="Type your message here..." style="flex-grow: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
             <button id="send-button" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #09b3039b; color: white; cursor: pointer;">Send</button>
@@ -97,6 +105,7 @@
     </div>
   </main>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

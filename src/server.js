@@ -102,5 +102,24 @@ io.on('connection', (socket) => {
   socket.on('leave_private_room', (roomId) => {
     socket.leave(roomId);
   });
+// Typing event (rate-limited to once every 3 seconds)
+let lastTypingLog = 0;
+
+socket.on('typing', () => {
+  const now = Date.now();
+  const username = userlist.get(socket.id);
+
+  if (now - lastTypingLog >= 3000) {
+    console.log(username + ' is typing ...');
+    lastTypingLog = now;
+  }
+
+  socket.broadcast.emit('typing');
+});
+
+
+
+
+
 
 });
