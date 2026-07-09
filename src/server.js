@@ -12,8 +12,9 @@ app.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy",
     "default-src 'self'; " +
-    "script-src 'self' https://cdnjs.cloudflare.com https://code.jquery.com; " +
-    "style-src 'self' 'unsafe-inline'; " +
+    "script-src 'self' https://cdnjs.cloudflare.com https://code.jquery.com https://cdn.socket.io; " +
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
+    "font-src 'self' https://fonts.gstatic.com; " +
     "connect-src 'self' https://cdnjs.cloudflare.com ws: wss:;"
   );
   next();
@@ -102,24 +103,20 @@ io.on('connection', (socket) => {
   socket.on('leave_private_room', (roomId) => {
     socket.leave(roomId);
   });
+  
 // Typing event (rate-limited to once every 3 seconds)
 let lastTypingLog = 0;
 
 socket.on('typing', () => {
   const now = Date.now();
-  const username = userlist.get(socket.id);
+  const userData = userlist.get(socket.id);
 
   if (now - lastTypingLog >= 3000) {
-    console.log(username + ' is typing ...');
+    console.log(userData + ' is typing ...');
     lastTypingLog = now;
   }
 
   socket.broadcast.emit('typing');
 });
-
-
-
-
-
 
 });

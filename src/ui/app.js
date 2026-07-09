@@ -177,8 +177,10 @@ function sendPrivateMessage() {
 // Event listeners for private chat finish (Enter key)
 privateSendBtn.addEventListener('click', sendPrivateMessage);
 privateChatInput.addEventListener('keypress', (e) => {
+    socket.emit("typing"); // tell server user is typing in private chat
     if (e.key === 'Enter') sendPrivateMessage();
 });
+
 // Handling receiving incoming private messages
 socket.on('receive_private_message', (data) => {
     // Sets up expected room ID to check whether private message belongs to the current active room
@@ -198,10 +200,18 @@ socket.on('receive_private_message', (data) => {
     }else{ //If message from another room, log it
         console.log("Background message received from another room: ", data.room);
     }
-// typing status indicator
+}); // Properly closed the message listener
+
+// typing status indicator listener
 socket.on('typing', function(){
     console.log("Typing event detected.");
-    $(".ticontainer").show();
-    setTimeout(()=>{$(".ticontainer").hide()},2000);
-    //Hides typing status after 2s. 
+    
+    // Show the typing indicator on whichever chat panel is currently visible
+    if (publicChat.style.display !== 'none') {
+        $(".public-ticontainer").show();
+        setTimeout(() => { $(".public-ticontainer").hide() }, 2000);
+    } else if (privateChat.style.display !== 'none') {
+        $(".private-ticontainer").show();
+        setTimeout(() => { $(".private-ticontainer").hide() }, 2000);
+    }
 });
