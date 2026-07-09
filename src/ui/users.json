@@ -4,24 +4,24 @@
     "username": "RowBoat",
     "password": "to-do",
     "nickname": "Rowan",
-    "friends": ["to-do"]
+    "friends": ["skylar", "nbatcher", "Jman1234"]
   },
   {
     "username": "skylar",
     "password": "to-do",
     "nickname": "Skylar",
-    "friends": ["to-do"]
+    "friends": ["RowBoat", "nbatcher", "Jman1234"]
   },
   {
     "username": "nbatcher",
     "password": "to-do",
     "nickname": "Noah",
-    "friends": ["to-do"]
+    "friends": ["RowBoat", "skylar", "Jman1234"]
   },
   {
     "username": "Jman1234",
     "password": "to-do",
     "nickname": "Jake",
-    "friends": ["to-do"]
+    "friends": ["RowBoat", "skylar", "nbatcher"]
   }
 ]

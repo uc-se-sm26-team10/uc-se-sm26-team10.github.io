@@ -65,10 +65,17 @@
     <div id="chat-section" style="display: none; padding: 20px;">
       <div style="display: flex; gap: 20px; justify-content: center;">
         
-        <div style="width: 200px; background-color: #f8f9fa; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
-          <h3 style="margin-top: 0;">Currently Online Users</h3>
-          <p style="font-size: 0.8em; color: gray;">Click a user to Private Message</p>
-          <ul id="online-users" style="list-style-type: none; padding: 0; margin: 0;"></ul>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="width: 200px; background-color: #f8f9fa; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+            <h3 style="margin-top: 0;">Currently Online</h3>
+            <p style="font-size: 0.8em; color: gray;">Click a user to Private Message</p>
+            <ul id="online-users" style="list-style-type: none; padding: 0; margin: 0;"></ul>
+          </div>
+
+          <div style="width: 200px; background-color: #e2e3e5; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+            <h3 style="margin-top: 0;">My Friends</h3>
+            <ul id="friends-list" style="list-style-type: none; padding: 0; margin: 0;"></ul>
+          </div>
         </div>
 
         <div id="public-chat" style="width: 600px; background-color: lightgray; padding: 15px; border-radius: 5px;">
