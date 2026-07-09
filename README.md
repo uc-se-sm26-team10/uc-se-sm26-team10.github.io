@@ -348,11 +348,11 @@ Add private chat, login, and status indicators implementation
 
 |Member|Hours|Contribution Summary|
 |-|-|-|
-|Skylar Bleau|6|Moved "about the team" to a hidden area on login page, added login page using SPA principles, reworked project from MPA to SPA|
+|Skylar Bleau|6|Moved "about the team" to a hidden area on login page, added login page using SPA principles, reworked project from MPA to SPA, added friends list implementation|
 |Khoi Tran|4|Implemented visually distinct public and private chat using seperate panels, including security considerations.|
 |Member 3|X|TODO|
 |Member 4|X|TODO|
-|Member 5|X|TODO|
+
 
 #### Sprint Retrospective
 
