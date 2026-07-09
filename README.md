@@ -33,6 +33,7 @@ Messenger is a real-time web-based chat application that allows registered users
 |Live prototype (Azure App Services)|https://TODO.azurewebsites.net|
 |GitHub Projects board (private)|https://github.com/orgs/uc-se-sm26-team10/projects/1|
 |Source code repository (private)|https://github.com/uc-se-sm26-team10/uc-se-sm26-team10.github.io|
+|Azure Live Website Link|https://uc-se-sm26-team10.azurewebsites.net/|
 |MongoDB Atlas cluster (configuration only — no credentials)|*e.g., cluster name, region*|
 
 ## Revision History
@@ -246,7 +247,7 @@ Describe the GitHub Actions workflow(s) under `.github/workflows/`. *(Sprint 1 o
 Describe how to deploy and the URL of the live application. Include a note on environment variables (set in Azure App Services Configuration, never in source). *(Sprint 1 onward.)*
 
 \---
-Will be deployed on azure or github pages, will add link here when ready.
+The website was deployed on Azure, using a free student account. Website can be found at https://uc-se-sm26-team10.azurewebsites.net/
 
 # Testing \& Quality Assurance
 
@@ -351,7 +352,7 @@ Add private chat, public chat and private chat seperate visually, login with use
 |-|-|-|
 |Skylar Bleau|6|Moved "about the team" to a hidden area on login page, added login page using SPA principles, reworked project from MPA to SPA|
 |Khoi Tran|4|Implemented visually distinct public and private chat using seperate panels, including security considerations.|
-|Member 3|X|TODO|
+|Joe Wilkie|0|????|
 |Noah Batcher|5|Setup project board (persona, work items), implemented typing status indicator, and implemented login with username|
 
 #### Sprint Retrospective
