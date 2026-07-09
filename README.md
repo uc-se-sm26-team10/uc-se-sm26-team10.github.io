@@ -336,23 +336,23 @@ Establish the general objectives for the project, establish use cases to address
 
 #### Sprint Goal
 
-Add private chat, login, and status indicators implementation
+Add private chat, public chat and private chat seperate visually, login with username only, show friends list, and typing status indicators implementation
 
 #### Completed PBIs / Tasks
 
-1. Add login, where only correct usernames/passwords can sign-in. Predetermined sets of users/passwords for now.
+1. Add login, where only correct usernames can sign-in. Predetermined sets of users for now.
 2. Add private chat, which can be quickly toggled between public and private.
 3. Add typing status indicators for both private and public chats.
+4. Friends list is visible and shows when friends are online
 
 #### Contributions
 
 |Member|Hours|Contribution Summary|
 |-|-|-|
-|Skylar Bleau|6|Moved "about the team" to a hidden area on login page, added login page using SPA principles, reworked project from MPA to SPA, added friends list implementation|
+|Skylar Bleau|6|Moved "about the team" to a hidden area on login page, added login page using SPA principles, reworked project from MPA to SPA|
 |Khoi Tran|4|Implemented visually distinct public and private chat using seperate panels, including security considerations.|
 |Member 3|X|TODO|
-|Member 4|X|TODO|
-
+|Noah Batcher|5|Setup project board (persona, work items), implemented typing status indicator, and implemented login with username|
 
 #### Sprint Retrospective
 
@@ -360,6 +360,8 @@ Add private chat, login, and status indicators implementation
 |-|-|-|
 |Login works well|Login should also be made to accept "Enter" as a submit/login button|Add implementation|
 |Good implementation of private/public chat|Users can't see past messages, private messages delete when switching between private/public chat|Add an array to store messages|
+|Typing inidcator doesn't spam console| Would be nice to have typing indicator not move chat input box down | Leave buffer for typing status indicator to be in/put in chat box region |
+
 ### Sprint 2
 
 **Duration:** 2026-06-29 to 2026-07-12
