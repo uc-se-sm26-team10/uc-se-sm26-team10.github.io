@@ -340,7 +340,7 @@ Add private chat, login, and status indicators implementation
 
 #### Completed PBIs / Tasks
 
-1. Add login, where only correct usernames/passwords can sign-in. Predetermined for now.
+1. Add login, where only correct usernames/passwords can sign-in. Predetermined sets of users/passwords for now.
 2. Add private chat, which can be quickly toggled between public and private.
 3. Add typing status indicators for both private and public chats.
 
@@ -349,7 +349,7 @@ Add private chat, login, and status indicators implementation
 |Member|Hours|Contribution Summary|
 |-|-|-|
 |Skylar Bleau|6|Moved "about the team" to a hidden area on login page, added login page using SPA principles, reworked project from MPA to SPA|
-|Member 2|X|TODO|
+|Khoi Tran|4|Implemented visually distinct public and private chat using seperate panels, including security considerations.|
 |Member 3|X|TODO|
 |Member 4|X|TODO|
 |Member 5|X|TODO|
@@ -359,7 +359,7 @@ Add private chat, login, and status indicators implementation
 |Good|Could have been better|How to improve|
 |-|-|-|
 |Login works well|Login should also be made to accept "Enter" as a submit/login button|Add implementation|
-||||
+|Good implementation of private/public chat|Users can't see past messages, private messages delete when switching between private/public chat|Add an array to store messages|
 ### Sprint 2
 
 **Duration:** 2026-06-29 to 2026-07-12
