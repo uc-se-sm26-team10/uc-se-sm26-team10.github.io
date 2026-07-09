@@ -246,6 +246,7 @@ Describe the GitHub Actions workflow(s) under `.github/workflows/`. *(Sprint 1 o
 Describe how to deploy and the URL of the live application. Include a note on environment variables (set in Azure App Services Configuration, never in source). *(Sprint 1 onward.)*
 
 \---
+Will be deployed on azure or github pages, will add link here when ready.
 
 # Testing \& Quality Assurance
 
@@ -335,19 +336,19 @@ Establish the general objectives for the project, establish use cases to address
 
 #### Sprint Goal
 
-TODO — one sentence.
+Add private chat, login, and status indicators implementation
 
 #### Completed PBIs / Tasks
 
-1. TODO
-2. TODO
-3. TODO
+1. Add login, where only correct usernames/passwords can sign-in. Predetermined for now.
+2. Add private chat, which can be quickly toggled between public and private.
+3. Add typing status indicators for both private and public chats.
 
 #### Contributions
 
 |Member|Hours|Contribution Summary|
 |-|-|-|
-|Member 1|X|TODO|
+|Skylar Bleau|6|Moved "about the team" to a hidden area on login page, added login page using SPA principles, reworked project from MPA to SPA|
 |Member 2|X|TODO|
 |Member 3|X|TODO|
 |Member 4|X|TODO|
@@ -357,7 +358,7 @@ TODO — one sentence.
 
 |Good|Could have been better|How to improve|
 |-|-|-|
-||||
+|Login works well|Login should also be made to accept "Enter" as a submit/login button|Add implementation|
 ||||
 ### Sprint 2
 
@@ -435,6 +436,8 @@ Keep it under an hour. The output is bullet points in the table above and any ne
 *Start in Sprint 1; finalize in Sprint 3.*
 
 Write this section as both a **demo** (with screenshots of the running application) and a **how-to** for a first-time user. Cover sign-up, login, and the main user flows.
+-----------------------
+Welcome to MT's Messenger! To use this, let's first start by creating an account. Simply hit the "Register" button, then fill out the information as instructed.
 
 \---
 
