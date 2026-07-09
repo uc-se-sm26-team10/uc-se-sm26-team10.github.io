@@ -198,10 +198,12 @@ socket.on('receive_private_message', (data) => {
     }else{ //If message from another room, log it
         console.log("Background message received from another room: ", data.room);
     }
-// typing status indicator
-socket.on('typing', function(){
-    console.log("Typing event detected.");
-    $(".ticontainer").show();
-    setTimeout(()=>{$(".ticontainer").hide()},2000);
-    //Hides typing status after 2s. 
+    });
+
+    // typing status indicator
+    socket.on('typing', function(){
+        console.log("Typing event detected.");
+        $(".ticontainer").show();
+        setTimeout(()=>{$(".ticontainer").hide()},2000);
+        //Hides typing status after 2s.
 });
