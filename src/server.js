@@ -70,4 +70,12 @@ io.on('connection', (socket) => {
     }
   });
 
+  // Typing event
+   socket.on('typing', () => {
+    const username = userlist.get(socket.id);
+    console.log(username + ' is typing ...');
+    socket.broadcast.emit('typing');
+  });
+
+
 });
