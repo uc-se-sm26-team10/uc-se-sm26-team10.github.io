@@ -70,12 +70,24 @@ io.on('connection', (socket) => {
     }
   });
 
-  // Typing event
-   socket.on('typing', () => {
-    const username = userlist.get(socket.id);
+// Typing event (rate-limited to once every 3 seconds)
+let lastTypingLog = 0;
+
+socket.on('typing', () => {
+  const now = Date.now();
+  const username = userlist.get(socket.id);
+
+  if (now - lastTypingLog >= 3000) {
     console.log(username + ' is typing ...');
-    socket.broadcast.emit('typing');
-  });
+    lastTypingLog = now;
+  }
+
+  socket.broadcast.emit('typing');
+});
+
+
+
+
 
 
 });
