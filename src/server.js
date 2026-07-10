@@ -107,10 +107,10 @@ let lastTypingLog = 0;
 
 socket.on('typing', () => {
   const now = Date.now();
-  const username = userlist.get(socket.id);
+  const user = userlist.get(socket.id);
 
   if (now - lastTypingLog >= 3000) {
-    console.log(username + ' is typing ...');
+    console.log(user.nickname + ' is typing ...');
     lastTypingLog = now;
   }
 
