@@ -6,6 +6,7 @@ const chatSection = document.getElementById('chat-section');
 const submitBtn = document.getElementById('Submit-button');
 const usernameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
+const friendsListContainer = document.getElementById('friends-list');
 
 // Private chat DOM section
 const publicChat = document.getElementById('public-chat');
@@ -42,7 +43,7 @@ const privateMessageContainer = document.getElementById('private-messages-contai
 const onlineUsersList = document.getElementById('online-users');
 
 // Keep track of identities globally inside the client app state
-let myIdentity = { username: '', nickname: '' };
+let myIdentity = { username: '', nickname: '', friends: []};
 let activeChatTarget = ''; // the username we are talking to privately
 let currentRoomId = ''; // the current room the user is in for private messaging
 
@@ -68,6 +69,7 @@ socket.on('Login_Validation', (data) => {
     // Save our runtime profile details
     myIdentity.username = data.username;
     myIdentity.nickname = data.nickname;
+    myIdentity.friends = data.friends || [];
     // SPA Pivot: Hide login div, show chat div
     loginSection.style.display = 'none';
     chatSection.style.display = 'block';
@@ -115,48 +117,80 @@ closePrivateBtn.addEventListener('click', () => {
     activeChatTarget = ''; // Clear target tracking
 });
 
-// Online users section
-socket.on('user_list_update', (users) => {
-    // Clear the current HTML list
-    onlineUsersList.innerHTML = '';
+// Online users section --------------------------------------
+// Opens a private chat window with the target user
+function openPrivateChat(targetUsername, targetNickname) {
+    const newRoomId = [myIdentity.username, targetUsername].sort().join('_');
     
+    // If shifting rooms, leave the old one
+    if (currentRoomId && currentRoomId !== newRoomId) {
+        socket.emit('leave_private_room', currentRoomId);
+    }
+    
+    // Set current room ID, chat target and change title
+    currentRoomId = newRoomId;
+    activeChatTarget = targetUsername;
+    privateChatTitle.innerText = `Chatting with ${targetNickname}`;
+    
+    // Clear prior history and swap UI panels
+    privateMessageContainer.innerHTML = '';
+    publicChat.style.display = 'none';
+    privateChat.style.display = 'block';
+    
+    // Register room connection inside server engine
+    socket.emit('join_private_room', { 
+        myUsername: myIdentity.username, 
+        targetUsername: activeChatTarget 
+    });
+}
+
+// Updates whenever anyone logs in or out
+socket.on('user_list_update', (users) => {
+    // Clear both HTML lists
+    onlineUsersList.innerHTML = '';
+    if(friendsListContainer) friendsListContainer.innerHTML = '';
+    
+    // Build the "Currently Online Users" List
     users.forEach((userObj) => {
-        // Skip adding ourselves to our own DM selection list 
-        if(userObj.username === myIdentity.username) return;
+        if(userObj.username === myIdentity.username) return; // Skip ourselves
 
         const li = document.createElement('li');
         li.style.cssText = "padding: 5px 0; border-bottom: 1px solid #ddd; color: #333; cursor: pointer;";
-        
         const safeNickname = DOMPurify.sanitize(userObj.nickname);
         li.innerHTML = `<span style="color: green;">●</span> ${safeNickname}`;
 
-        // CLICK EVENT: Toggles panel visibility state just like Login/About shifts
+        // Make clickable for DMs
         li.addEventListener('click', () => {
-            const newRoomId = [myIdentity.username, userObj.username].sort().join('_');
-            // If shifting rooms, leave the old one
-            if (currentRoomId && currentRoomId !== newRoomId) {
-                socket.emit('leave_private_room', currentRoomId);
-            }
-            // Set current room ID, chat target and change title
-            currentRoomId = newRoomId;
-            activeChatTarget = userObj.username;
-            privateChatTitle.innerText = `Chatting with ${userObj.nickname}`;
-            
-            // Clear prior history from shared window container before loading new room
-            privateMessageContainer.innerHTML = '';
-            // Hide public panel, show private panel
-            publicChat.style.display = 'none';
-            privateChat.style.display = 'block';
-            
-            // Register room connection inside server engine
-            socket.emit('join_private_room', { 
-                myUsername: myIdentity.username, 
-                targetUsername: activeChatTarget 
-            });
+            openPrivateChat(userObj.username, userObj.nickname);
         });
 
         onlineUsersList.appendChild(li);
     });
+
+    // Build the Dynamic "My Friends" List
+    if (friendsListContainer && myIdentity.friends && myIdentity.friends.length > 0) {
+        myIdentity.friends.forEach(friendUsername => {
+            // Check if this friend is currently in the 'users' online array
+            const onlineFriend = users.find(u => u.username === friendUsername);
+            
+            const li = document.createElement('li');
+            li.style.cssText = "padding: 5px 0; border-bottom: 1px solid #ddd; color: #333;";
+            
+            if (onlineFriend) {
+                // Friend is ONLINE: Green dot, real nickname, and clickable
+                li.innerHTML = `<span style="color: green;">●</span> ${DOMPurify.sanitize(onlineFriend.nickname)} <span style="font-size: 0.8em; color: gray;">(Online)</span>`;
+                li.style.cursor = "pointer";
+                li.addEventListener('click', () => {
+                    openPrivateChat(onlineFriend.username, onlineFriend.nickname);
+                });
+            } else {
+                // Friend is OFFLINE: Gray dot, username only, non-clickable
+                li.innerHTML = `<span style="color: gray;">○</span> ${DOMPurify.sanitize(friendUsername)} <span style="font-size: 0.8em; color: gray;">(Offline)</span>`;
+            }
+            
+            friendsListContainer.appendChild(li);
+        });
+    }
 });
 
 // Handles sending private messages
@@ -177,8 +211,10 @@ function sendPrivateMessage() {
 // Event listeners for private chat finish (Enter key)
 privateSendBtn.addEventListener('click', sendPrivateMessage);
 privateChatInput.addEventListener('keypress', (e) => {
+    socket.emit("typing"); // tell server user is typing in private chat
     if (e.key === 'Enter') sendPrivateMessage();
 });
+
 // Handling receiving incoming private messages
 socket.on('receive_private_message', (data) => {
     // Sets up expected room ID to check whether private message belongs to the current active room
@@ -198,12 +234,18 @@ socket.on('receive_private_message', (data) => {
     }else{ //If message from another room, log it
         console.log("Background message received from another room: ", data.room);
     }
-    });
+}); // Properly closed the message listener
 
-    // typing status indicator
-    socket.on('typing', function(){
-        console.log("Typing event detected.");
-        $(".ticontainer").show();
-        setTimeout(()=>{$(".ticontainer").hide()},2000);
-        //Hides typing status after 2s.
+// typing status indicator listener
+socket.on('typing', function(){
+    console.log("Typing event detected.");
+    
+    // Show the typing indicator on whichever chat panel is currently visible
+    if (publicChat.style.display !== 'none') {
+        $(".public-ticontainer").show();
+        setTimeout(() => { $(".public-ticontainer").hide() }, 2000);
+    } else if (privateChat.style.display !== 'none') {
+        $(".private-ticontainer").show();
+        setTimeout(() => { $(".private-ticontainer").hide() }, 2000);
+    }
 });

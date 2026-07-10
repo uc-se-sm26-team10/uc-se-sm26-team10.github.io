@@ -1,5 +1,3 @@
-<!--use this link after "npm start" to view website http://localhost:8080/index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EECE/CS 3093C Scrum Project — Team Mac Techs & Messenger</title>
   
-  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.socket.io/4.8.3/socket.io.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.4.8/purify.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  </head>
+</head>
 <body>
   <header style="text-align: center;">
     <h1>Messenger — Team Mac Techs</h1>
@@ -53,6 +52,10 @@
         Easy messaging for everyday people.
       </p>
       
+      <video width="640" height="360" controls>
+        <source src="Sprint1Video.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
       <h2>Project Links</h2>
       <ul>
         <li>GitHub Repository: <a href="https://github.com/uc-se-sm26-team10/uc-se-sm26-team10.github.io">https://github.com/uc-se-sm26-team10/uc-se-sm26-team10.github.io</a></li>
@@ -66,16 +69,24 @@
     <div id="chat-section" style="display: none; padding: 20px;">
       <div style="display: flex; gap: 20px; justify-content: center;">
         
-        <div style="width: 200px; background-color: #f8f9fa; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
-          <h3 style="margin-top: 0;">Currently Online Users</h3>
-          <p style="font-size: 0.8em; color: gray;">Click a user to Private Message</p>
-          <ul id="online-users" style="list-style-type: none; padding: 0; margin: 0;"></ul>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="width: 200px; background-color: #f8f9fa; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+            <h3 style="margin-top: 0;">Currently Online</h3>
+            <p style="font-size: 0.8em; color: gray;">Click a user to Private Message</p>
+            <ul id="online-users" style="list-style-type: none; padding: 0; margin: 0;"></ul>
+          </div>
+
+          <div style="width: 200px; background-color: #e2e3e5; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+            <h3 style="margin-top: 0;">My Friends</h3>
+            <ul id="friends-list" style="list-style-type: none; padding: 0; margin: 0;"></ul>
+          </div>
         </div>
 
         <div id="public-chat" style="width: 600px; background-color: lightgray; padding: 15px; border-radius: 5px;">
           <h2 style="margin-top: 0;">Live Global Chat (Public)</h2>
           <div id="messages-container" style="height: 350px; overflow-y: auto; background: white; margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></div>
-          <div class="ticontainer" style="display:none">
+          
+          <div class="ticontainer public-ticontainer" style="display:none">
             <div class="tiblock">
               <div class="tidot"></div>
               <div class="tidot"></div>
@@ -85,7 +96,9 @@
           
           <div style="display: flex; gap: 5px;">
             <input type="text" id="chat-input" placeholder="Type your message here..." style="flex-grow: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-            <button id="send-button" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #09b3039b; color: white; cursor: pointer;">Send</button>
+            <button id="send-button" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #09b3039b; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
+              Send <i class="material-icons" style="font-size: 18px;">send</i>
+            </button>
           </div>
         </div>
         
@@ -95,9 +108,20 @@
             <button id="close-private-btn" style="padding: 5px 10px; cursor: pointer; border-radius: 3px; border: 1px solid #999;">Back to Public</button>
           </div>
           <div id="private-messages-container" style="height: 350px; overflow-y: auto; background: white; margin: 10px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></div>
+          
+          <div class="ticontainer private-ticontainer" style="display:none">
+            <div class="tiblock">
+              <div class="tidot"></div>
+              <div class="tidot"></div>
+              <div class="tidot"></div>
+            </div>
+          </div>
+
           <div style="display: flex; gap: 5px;">
             <input type="text" id="private-chat-input" placeholder="Type private message..." style="flex-grow: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-            <button id="private-send-button" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #17a2b8; color: white; cursor: pointer;">Send</button>
+            <button id="private-send-button" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #17a2b8; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
+              Send <i class="material-icons" style="font-size: 18px;">send</i>
+            </button>
           </div>
         </div>
 
