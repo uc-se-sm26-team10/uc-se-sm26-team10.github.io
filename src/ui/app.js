@@ -15,6 +15,39 @@ const closePrivateBtn = document.getElementById('close-private-btn');
 const privateChatTitle = document.getElementById('private-chat-title');
 
 
+// For Registation Section -----------------------------------------
+const regSection = document.getElementById('registation-section');
+const loginToRegBtn = document.getElementById('Login-to-Reg-page');
+const RegToLoginBtn = document.getElementById('back-to-login-from-register-button');
+const regBtn = document.getElementById('register-button');
+const regUsername = document.getElementById('reg-username');
+const regPassword = document.getElementById('reg-password');
+
+loginToRegBtn.addEventListener('click', () => {
+    regSection.style.display = 'block';
+    loginSection.style.display = 'none';
+});
+
+RegToLoginBtn.addEventListener('click', () => {
+    regSection.style.display = 'none';
+    loginSection.style.display = 'block';
+});
+
+regBtn.addEventListener('click', () => {
+    const username = regUsername.value;
+    const password = regPassword.value;
+    
+    const pattern = /^\w{3,20}$/;
+    if (!username || !pattern.test(username)) {
+        alert("Username cannot be empty and must be between 3–20 characters!");
+        return;
+    }
+
+    socket.emit('Register_attempt', username, password);
+});
+
+// End Registation Section -----------------------------------------
+
 // For the "About" section --------------
 const aboutSection = document.getElementById('about-section');
 const aboutBtn = document.getElementById('about-button');

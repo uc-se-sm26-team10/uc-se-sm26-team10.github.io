@@ -58,6 +58,13 @@ io.on('connection', (socket) => {
     io.emit('user_list_update', Array.from(userlist.values()));
   });
 
+  //Register section
+  socket.on('Register_attempt', function(username, password){
+    // to-do check if user name already taken
+    
+    //send to mongo-DB
+  });
+
   // Private chat section
   // Creates private room for private messaging between two users; 
   // room ID is a combination of both usernames, sorted alphabetically to ensure uniqueness
