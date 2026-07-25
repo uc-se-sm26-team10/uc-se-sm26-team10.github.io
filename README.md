@@ -30,7 +30,7 @@ Messenger is a real-time web-based chat application that allows registered users
 |Item|URL|
 |-|-|
 |Team homepage / landing page|https://uc-se-sm26-team10.github.io|
-|Live prototype (Azure App Services)|https://TODO.azurewebsites.net|
+|Live prototype (Azure App Services)|https://uc-se-sm26-team10.azurewebsites.net/|
 |GitHub Projects board (private)|https://github.com/orgs/uc-se-sm26-team10/projects/1|
 |Source code repository (private)|https://github.com/uc-se-sm26-team10/uc-se-sm26-team10.github.io|
 |MongoDB Atlas cluster (configuration only — no credentials)|*e.g., cluster name, region*|
