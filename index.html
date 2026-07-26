@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EECE/CS 3093C Scrum Project — Team Mac Techs & Messenger</title>
+  
+  <script src="https://cdn.socket.io/4.8.3/socket.io.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.4.8/purify.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header style="text-align: center;">
+    <h1>Messenger — Team Mac Techs</h1>
+    <p>EECE/CS-3093C Software Engineering</p>
+    <hr>
+  </header>
+
+  <main>
+    <div id="login-section" style="text-align: center; margin-top: 20px;">
+      <h2>MT Messanger Login</h2>
+      <h4>Username: 
+        <input type="text" id="username" placeholder="Enter username..." pattern="\w{3,20}" required title="Username must be between 3-20 characters.">
+      </h4>
+      <h4>Password: 
+        <input type="password" id="password" placeholder="Enter password...">
+      </h4>
+      <button id="Submit-button" style="padding: 5px 15px; background-color: #09b3039b;">Login</button>
+      <button id="Login-to-Reg-page" style="padding: 5px 15px;">Register</button>
+      <button id="" style="padding: 5px 15px;">Forgot Password [TO-DO]</button>
+      <br><br>
+      <button id="about-button" style="padding: 5px 15px; background-color: #6c757d; color: white; border: none; border-radius: 5px; cursor: pointer;">About the Project & Team</button>
+    </div>
+
+
+
+
+
+    <div id="registation-section" style="display: none; text-align: center; margin-top: 20px;">
+      <h2>Register New User</h2>
+      <button id="back-to-login-from-register-button" style="padding: 5px 15px;">Back to Login</button>
+      <h4>Username: 
+        <input type="text" id="reg-username" placeholder="Enter username..." pattern="\w{3,20}" required title="Username must be between 3-20 characters.">
+      </h4>
+      <h4>Password: 
+        <input type="password" id="reg-password" placeholder="Enter password...">
+      </h4>
+      <button id="register-button" style="padding: 5px 15px; background-color: #09b3039b;">Register</button>
+    </div>
+
+
+
+
+
+
+    <div id="about-section" style="display: none; padding: 20px; max-width: 800px; margin: 0 auto; text-align: left;">
+      <button id="back-to-login-button" style="padding: 5px 15px; margin-bottom: 20px; cursor: pointer;">&larr; Back to Login</button>
+      
+      <h2>Team Members</h2>
+      <ul>
+        <li><strong>Member 1 Joe Wilkie</strong> &mdash; <a href="mailto:wilkiejj@mail.uc.edu">wilkiejj@mail.uc.edu</a> (Role: Product Owner)</li>
+        <li><strong>Member 2 Khoi Tran</strong> &mdash; <a href="mailto:tran2ki@mail.uc.edu">tran2ki@mail.uc.edu</a> (Role: Scrum Master/Developer)</li>
+        <li><strong>Member 3 Skylar Bleau</strong> &mdash; <a href="mailto:bleausr@mail.uc.edu">bleausr@mail.uc.edu</a> (Role: Organization Owner/Manager, Scrum Member)</li>
+        <li><strong>Member 4 Noah Batcher</strong> &mdash; <a href="mailto:batchenh@mail.uc.edu">batchenh@mail.uc.edu</a> (Role: Scrum Member)</li>
+      </ul>
+
+      <h2>About the Project</h2>
+      <p>
+        Remember when communicating with your friends online was easy?<br>
+        The simple interfaces, customizable to your heart's content and operating on an end-to-end principle where the only role of the app is to get what you want to say to whomever you want to say it to as fast and safely as possible. <br>
+        Straightforward, yet feature rich, this isolates your messaging from distractions and remains capable enough for everything from private messaging with old classmates to the soccer practice carpool. <br>
+        Easy messaging for everyday people.
+      </p>
+      
+      <video width="640" height="360" controls>
+        <source src="Sprint1Video.mp4" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <h2>Project Links</h2>
+      <ul>
+        <li>GitHub Repository: <a href="https://github.com/uc-se-sm26-team10/uc-se-sm26-team10.github.io">https://github.com/uc-se-sm26-team10/uc-se-sm26-team10.github.io</a></li>
+        <li>GitHub Project Board: <a href="https://github.com/orgs/uc-se-sm26-team10/projects/1">https://github.com/orgs/uc-se-sm26-team10/projects/1</a></li>
+        <li>Deployed App (Azure App Services): <a href="https://uc-se-sm26-team10.azurewebsites.net/">https://uc-se-sm26-team10.azurewebsites.net/</a></li>
+      </ul>
+      <hr>
+      <p><small>&copy; Team Mac Techs &mdash; EECE/CS-3093C Software Engineering, University of Cincinnati. Last updated: 2026-06-11.</small></p>
+    </div>
+
+    <div id="chat-section" style="display: none; padding: 20px;">
+      <div style="display: flex; gap: 20px; justify-content: center;">
+        
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="width: 200px; background-color: #f8f9fa; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+            <h3 style="margin-top: 0;">Currently Online</h3>
+            <p style="font-size: 0.8em; color: gray;">Click a user to Private Message</p>
+            <ul id="online-users" style="list-style-type: none; padding: 0; margin: 0;"></ul>
+          </div>
+
+          <div style="width: 200px; background-color: #e2e3e5; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+            <h3 style="margin-top: 0;">My Friends</h3>
+            <ul id="friends-list" style="list-style-type: none; padding: 0; margin: 0;"></ul>
+          </div>
+        </div>
+
+        <div id="public-chat" style="width: 600px; background-color: lightgray; padding: 15px; border-radius: 5px;">
+          <h2 style="margin-top: 0;">Live Global Chat (Public)</h2>
+          <div id="messages-container" style="height: 350px; overflow-y: auto; background: white; margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></div>
+          
+          <div class="ticontainer public-ticontainer" style="display:none">
+            <div class="tiblock">
+              <div class="tidot"></div>
+              <div class="tidot"></div>
+              <div class="tidot"></div>
+              </div>
+            </div>
+          
+          <div style="display: flex; gap: 5px;">
+            <input type="text" id="chat-input" placeholder="Type your message here..." style="flex-grow: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+            <button id="send-button" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #09b3039b; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
+              Send <i class="material-icons" style="font-size: 18px;">send</i>
+            </button>
+          </div>
+        </div>
+        
+        <div id="private-chat" style="display: none; width: 500px; background-color: #d1ecf1; padding: 15px; border-radius: 5px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0;">
+            <h2 id="private-chat-title" style="margin: 0;">Chatting with...</h2>
+            <button id="close-private-btn" style="padding: 5px 10px; cursor: pointer; border-radius: 3px; border: 1px solid #999;">Back to Public</button>
+          </div>
+          <div id="private-messages-container" style="height: 350px; overflow-y: auto; background: white; margin: 10px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></div>
+          
+          <div class="ticontainer private-ticontainer" style="display:none">
+            <div class="tiblock">
+              <div class="tidot"></div>
+              <div class="tidot"></div>
+              <div class="tidot"></div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 5px;">
+            <input type="text" id="private-chat-input" placeholder="Type private message..." style="flex-grow: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+            <button id="private-send-button" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #17a2b8; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
+              Send <i class="material-icons" style="font-size: 18px;">send</i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
