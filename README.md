@@ -8,7 +8,7 @@
 
 **Instructor:** Dr. Phu Phung
 
-\---
+---
 
 # Scrum Project — Messenger
 
@@ -18,12 +18,12 @@ Messenger is a real-time web-based chat application that allows registered users
 
 ## Team Members
 
-1. Joe Wilkie — wilkiejj@mail.uc.edu — Product Owner
+1. Joe Wilkie — wilkiejj@mail.uc.edu — Scrum Member
 2. Khoi Tran — tran2ki@mail.uc.edu — Scrum Master
-3. Skylar Bleau — bleausr@mail.uc.edu — Repository Owner
-4. Noah Batcher — batchenh@mail.uc.edu
+3. Skylar Bleau — bleausr@mail.uc.edu — Repository Owner, Scrum Member
+4. Noah Batcher — batchenh@mail.uc.edu - Scrum Member
 
-\---
+---
 
 # Project Management Information
 
@@ -32,7 +32,7 @@ Messenger is a real-time web-based chat application that allows registered users
 |Team homepage / landing page|https://uc-se-sm26-team10.github.io|
 |Live prototype (Azure App Services)|https://uc-se-sm26-team10.azurewebsites.net/|
 |GitHub Projects board (private)|https://github.com/orgs/uc-se-sm26-team10/projects/1|
-|Source code repository (private)|https://github.com/uc-se-sm26-team10/uc-se-sm26-team10.github.io|
+|Source code repository (private)|https://github.com/uc-se-sm26-team10/scrum-project|
 |MongoDB Atlas cluster (configuration only — no credentials)|*e.g., cluster name, region*|
 
 ## Revision History
@@ -43,7 +43,7 @@ Messenger is a real-time web-based chat application that allows registered users
 |05/28/2026|0.1|Added own personal info (Sprint 0)|Khoi Tran|
 |06/04/2026|0.2|Added use cases and architecture (Spring 0)||
 
-\---
+---
 
 # Overview
 
@@ -51,7 +51,7 @@ Messenger is a real-time web-based chat application that allows registered users
 
 For far too long, we have been complacent with the lack-luster levels of communication offered by the current messaging platforms. The interfaces are often too complex and provide minimal details, and quality customization and optimization of these apps is very rare. That's what we are working to change.
 
-\---
+---
 
 # System Analysis
 
@@ -60,7 +60,9 @@ For far too long, we have been complacent with the lack-luster levels of communi
 High-level functional and non-functional requirements.
 
 * **FR-1:** Send Messages — *As a user, I want to send messages to other users with instant sending so that communication is seemless.*
-* **FR-2:** Recieve Messages -  *As a user, I want to recieve messages from other users with instant recieving so that communication is seemless.*
+* **FR-2:** Recieve Messages — *As a user, I want to recieve messages from other users with instant recieving so that communication is seemless.*
+* **FR-3:** Maintain Friends List — *As a user, I want to view a list of my friends and their online status so that I know who is available to chat.*
+* **FR-4:** Secure Login — *As a user, I want to securely log in to my account so that my identity and messages remain private and protected.*
 * **NFR-1 (Performance):** Low RAM/CPU/GPU usage - *As a user, I want a lightweight application so that my system isnt stressed*
 * **NFR-2 (Usability):** User Interface - *As a user, I want a clear login and chat interface so that navigation is easy*
 * **NFR-3 (Security — see §Security):** Scan Files - *As a user, I want to be protected from bad actors so that I can safely message*
@@ -97,7 +99,7 @@ High-level functional and non-functional requirements.
 | UC-03 | List Friends    | Connected User | Users can follow/add users/friends and view them in a list. They can also make a  private group chats and see users/friends status. |
 | UC-04 | Login Securely     | Connected User | Users are the only ones able to access their accounts and can do so with their unique username across multiple devices. |
 
-\---
+---
 ### Acceptance Criteria
 - AC-01.1: a message input field and a Send button are present and usable on the chat screen.
 - AC-01.2: when the input field is empty and Send is clicked or Enter is pressed, no message appears
@@ -194,8 +196,10 @@ Identify assets, trust boundaries, and threats. STRIDE or attack-tree format is 
 ## Security Review Notes
 
 Summarize findings from your Sprint 2 security review and any remediation taken. *(Sprint 2 onward.)*
--[] TODO
-\---
+
+- [ ] TODO
+
+---
 
 # Implementation
 
@@ -206,7 +210,7 @@ Specify your development approach, languages, frameworks, and runtime. Default s
 |Layer|Technology|
 |-|-|
 |Runtime|Node.js (Azure Cloud Shell for development)|
-|Server framework|TODO *(e.g., Express)*|
+|Server framework|Express / Socket.io|
 |Database|MongoDB Atlas|
 |Client|HTML / CSS / JavaScript *(framework optional)*|
 |Version control|git + GitHub (branches + pull requests + code review)|
@@ -221,8 +225,8 @@ For each sprint, add a subsection that summarizes new implementation work. Inclu
 
 ```bash
 # Clone
-git clone git@github.com:TODO/TODO.git
-cd TODO
+git clone [https://github.com/uc-se-sm26-team10/scrum-project.git](https://github.com/uc-se-sm26-team10/scrum-project.git)
+cd scrum-project
 
 # Install dependencies
 npm install
@@ -245,8 +249,10 @@ Describe the GitHub Actions workflow(s) under `.github/workflows/`. *(Sprint 1 o
 
 Describe how to deploy and the URL of the live application. Include a note on environment variables (set in Azure App Services Configuration, never in source). *(Sprint 1 onward.)*
 
-\---
-Will be deployed on azure or github pages, will add link here when ready.
+---
+
+* Live Application (Azure App Services): https://uc-se-sm26-team10.azurewebsites.net/
+* Team Homepage (GitHub Pages): https://uc-se-sm26-team10.github.io/
 
 # Testing \& Quality Assurance
 
@@ -268,7 +274,7 @@ npm test
 
 Manual test cases for user-facing flows, with expected vs. actual results. *(Sprint 3.)*
 
-\---
+---
 
 # GenAI Usage \& Reflection
 
@@ -276,7 +282,7 @@ Manual test cases for user-facing flows, with expected vs. actual results. *(Spr
 
 Per the course academic integrity policy, the team must document all AI-assisted work on the team project. **Sprint 3 recommends the team to use a GenAI tool** for the final prototype and to document each substantive prompt.
 
-\---
+---
 
 # Software Process Management
 
@@ -351,7 +357,7 @@ Add private chat, public chat and private chat seperate visually, login with use
 |-|-|-|
 |Skylar Bleau|6|Moved "about the team" to a hidden area on login page, added login page using SPA principles, reworked project from MPA to SPA|
 |Khoi Tran|4|Implemented visually distinct public and private chat using seperate panels, including security considerations.|
-|Member 3|X|TODO|
+|Joe Wilkie|0|Absent during this sprint|
 |Noah Batcher|5|Setup project board (persona, work items), implemented typing status indicator, and implemented login with username|
 
 #### Sprint Retrospective
@@ -431,17 +437,44 @@ Working through the sprints is a continuous-improvement process. The retrospecti
 
 Keep it under an hour. The output is bullet points in the table above and any new PBIs created on the board.
 
-\---
+---
 
 # User Guide / Demo
 
 *Start in Sprint 1; finalize in Sprint 3.*
 
 Write this section as both a **demo** (with screenshots of the running application) and a **how-to** for a first-time user. Cover sign-up, login, and the main user flows.
------------------------
-Welcome to MT's Messenger! To use this, let's first start by creating an account. Simply hit the "Register" button, then fill out the information as instructed.
 
-\---
+---
+
+Welcome to MT's Messenger! This guide will help you navigate our application smoothly.
+
+### 1. Account Registration
+To use the messenger, you must first create an account. 
+* Navigate to the login page and click the **"Register"** button.
+* Enter a valid username (must be between 3 and 20 characters) and a secure password.
+* Click **"Register"** to finalize your account creation.
+
+### 2. Logging In
+Once your account is created, you will be redirected to the login screen.
+* Enter your new username and password.
+* Click the **"Login"** button to enter the main application space.
+
+### 3. Using Global Chat (Public)
+After logging in, you will immediately see the **Live Global Chat (Public)** panel. 
+* Any message typed into the input bar at the bottom and sent via the **"Send"** button will be broadcast instantly to all currently connected users. 
+* You will be able to see typing indicators when other users are currently drafting a message.
+
+### 4. Sending Private Messages
+You can easily switch from public broadcasting to private, 1-on-1 messaging.
+* Look at the **"Currently Online"** or **"My Friends"** panels on the left side of the screen.
+* Click on any user's name in those lists to open a private chat window.
+* Messages sent in this window will only be visible to you and the recipient.
+* Click the **"Back to Public"** button at the top of the private chat window to return to the global chat at any time.
+
+*(Screenshots and more details to be added later).*
+
+---
 
 # License \& Code of Conduct
 
@@ -449,7 +482,6 @@ This project is developed for academic purposes as part of EECE/CS-3093C at the 
 
 If your team chooses to publish the repository after the course, add an explicit license (e.g., MIT) here and a `LICENSE` file at the repo root.
 
-\---
+---
 
 *End of template. Last template revision: 2026-05-29.*
-
