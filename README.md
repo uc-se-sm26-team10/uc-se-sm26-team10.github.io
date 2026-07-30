@@ -195,10 +195,9 @@ Identify assets, trust boundaries, and threats. STRIDE or attack-tree format is 
 
 ## Security Review Notes
 
-Summarize findings from your Sprint 2 security review and any remediation taken. *(Sprint 2 onward.)*
-
-- [ ] TODO
-
+- [x] Conducted full source code review prior to production deployment to ensure no sensitive data is exposed 
+- [x] Configured MongoDB Atlas Network Access to strictly whitelist Azure App Service outbound IP addresses using CIDR notation, blocking all unauthorized traffic.
+- [x] Verified implementation of `DOMPurify` on the client side to sanitize all incoming public and private messages against XSS attacks.
 ---
 
 # Implementation
@@ -370,73 +369,32 @@ Add private chat, public chat and private chat seperate visually, login with use
 
 ### Sprint 2
 
-**Duration:** 2026-06-29 to 2026-07-12
+**Duration:** 2026-06-29 to 2026-07-26
 
 #### Sprint Goal
 
-TODO — one sentence.
+Finalize the production environment, repair deployment pipelines, and resolve critical authentication bugs in the live application.
 
 #### Completed PBIs / Tasks
 
 1. TODO
-2. TODO
-3. TODO
+2. Ensure security follows typical industry and SDLCC standards
+3. Added chat history, adding friends, and edit profile
 
 #### Contributions
 
 |Member|Hours|Contribution Summary|
 |-|-|-|
-|Member 1|X|TODO|
+|Skylar Bleau|12|Added chat history, diagnosed Azure 503/403/Container errors, configured MongoDB IP whitelist, fixed JavaScript DOM selection bugs in registration, and repaired the Azure startup command pathing.|
 |Member 2|X|TODO|
 |Member 3|X|TODO|
 |Member 4|X|TODO|
-|Member 5|X|TODO|
 
 #### Sprint Retrospective
 
 |Good|Could have been better|How to improve|
-|-|-|-|
-||||
-||||
-### Sprint 3
-
-**Duration:** 2026-07-13 to 2026-07-26
-
-#### Sprint Goal
-
-TODO — one sentence.
-
-#### Completed PBIs / Tasks
-
-1. TODO
-2. TODO
-3. TODO
-
-#### Contributions
-
-|Member|Hours|Contribution Summary|
-|-|-|-|
-|Member 1|X|TODO|
-|Member 2|X|TODO|
-|Member 3|X|TODO|
-|Member 4|X|TODO|
-|Member 5|X|TODO|
-
-#### Sprint Retrospective
-
-|Good|Could have been better|How to improve|
-|-|-|-|
-||||
-||||
-
-Working through the sprints is a continuous-improvement process. The retrospective happens at the end of a sprint, before planning the next one. Cover three things briefly:
-
-* **What went well** — celebrate and reinforce.
-* **What could have been better** — be specific (e.g., "we underestimated authentication" not "things were hard").
-* **How we will improve next sprint** — concrete, owned actions.
-
-Keep it under an hour. The output is bullet points in the table above and any new PBIs created on the board.
-
+|Successfully deployed a stable app to production|Matching local testing environment to the production environment|Implement strict parity between local folders and cloud configurations|
+|Rapidly diagnosed server crash loops|Understanding Azure's Kudu deployment engine|Read deployment logs more closely before changing paths|
 ---
 
 # User Guide / Demo
@@ -454,16 +412,19 @@ To use the messenger, you must first create an account.
 * Navigate to the login page and click the **"Register"** button.
 * Enter a valid username (must be between 3 and 20 characters) and a secure password.
 * Click **"Register"** to finalize your account creation.
+![](https://i.imgur.com/0WCTmlG.png)
 
 ### 2. Logging In
 Once your account is created, you will be redirected to the login screen.
 * Enter your new username and password.
 * Click the **"Login"** button to enter the main application space.
+![](https://i.imgur.com/nsGVmQP.png)
 
 ### 3. Using Global Chat (Public)
 After logging in, you will immediately see the **Live Global Chat (Public)** panel. 
 * Any message typed into the input bar at the bottom and sent via the **"Send"** button will be broadcast instantly to all currently connected users. 
 * You will be able to see typing indicators when other users are currently drafting a message.
+![](https://i.imgur.com/1l21gkN.png)
 
 ### 4. Sending Private Messages
 You can easily switch from public broadcasting to private, 1-on-1 messaging.
@@ -471,8 +432,7 @@ You can easily switch from public broadcasting to private, 1-on-1 messaging.
 * Click on any user's name in those lists to open a private chat window.
 * Messages sent in this window will only be visible to you and the recipient.
 * Click the **"Back to Public"** button at the top of the private chat window to return to the global chat at any time.
-
-*(Screenshots and more details to be added later).*
+![](https://i.imgur.com/WB8pHkw.png)
 
 ---
 
@@ -484,4 +444,4 @@ If your team chooses to publish the repository after the course, add an explicit
 
 ---
 
-*End of template. Last template revision: 2026-05-29.*
+*End of document. Last revision: 2026-07-30.*
